@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Logging</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <link rel="stylesheet" href="/assets/css/prism.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+
+    </head>
+    <body>
+
+<header>
+
+        <a href="https://github.com/zerothstack/zeroth#readme">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                 alt="Fork me on GitHub"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+    <nav class="top-nav" role="navigation">
+        <div class="container">
+            <a href="#" data-activates="nav-mobile"
+               class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <div class="nav-wrapper container">
+            <ul class="left">
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.0.0.1-0</a></li>
+            </ul>
+            <ul class="right">
+                    <li class="active"><a href="/guide">Developer Guide</a></li>
+                    <li class=""><a href="/api">API</a></li>
+                    <li class=""><a href="/articles">Articles</a></li>
+                    <li class=""><a href="/changelog">Changelog</a></li>
+                    <li class=""><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="/" class="brand-logo">
+                    <img src="/assets/image/logo.svg" alt="Logo">
+                </a>        </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="active collapsible-header waves-effect waves-grey">Developer Guide</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/guide/quick-start">
+                                                    <span>Quick Start</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/application-lifecycle">
+                                                    <span>Application Lifecycle</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/cli">
+                                                    <span>CLI</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/configuration">
+                                                    <span>Configuration</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/controllers">
+                                                    <span>Controllers</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/database">
+                                                    <span>Database</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/dependency-injection">
+                                                    <span>Dependency Injection</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/deployment">
+                                                    <span>Deployment</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/documentation">
+                                                    <span>Documentation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/email">
+                                                    <span>Email</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/exceptions">
+                                                    <span>Exceptions</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="/guide/logging">
+                                                    <span>Logging</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/middleware">
+                                                    <span>Middleware</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/migrations">
+                                                    <span>Migrations</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/model-stores">
+                                                    <span>Model Stores</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/models">
+                                                    <span>Models</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/queues">
+                                                    <span>Queues</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/routing">
+                                                    <span>Routing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/seeding">
+                                                    <span>Seeding</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/services">
+                                                    <span>Services</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/testing">
+                                                    <span>Testing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/validation">
+                                                    <span>Validation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/api" class="waves-effect waves-grey">API</a>
+                    </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class=" collapsible-header waves-effect waves-grey">Articles</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/articles/zeroth-for-the-angular-developer">
+                                                    <span>Zeroth for the Angular developer</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/articles/why-bother">
+                                                    <span>Why bother?</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/changelog" class="waves-effect waves-grey">Changelog</a>
+                    </li>
+                    <li class="bold ">
+                        <a href="/faq" class="waves-effect waves-grey">FAQ</a>
+                    </li>
+        </ul>
+    
+</header><main>
+    <div class="container">
+        <h1>Logging</h1>
+
+        <ul class="section table-of-contents">
+                <li><a href="#methods"># Methods</a></li>
+                <li><a href="#log-source">&emsp;# Log Source</a></li>
+                <li><a href="#log-verbosity-level"># Log verbosity level</a></li>
+                <li><a href="#implementations"># Implementations</a></li>
+                <li><a href="#-consolelogger-">&emsp;# ConsoleLogger</a></li>
+                <li><a href="#-mocklogger-">&emsp;# MockLogger</a></li>
+                <li><a href="#planned-implementations"># Planned Implementations</a></li>
+        </ul>
+
+        <div class="contents"><p>Zeroth provides an <code>@Injectable()</code> abstract service named <code>Logger</code>. This means that no matter what implementation you use,
+ you can always inject the <code>Logger</code> service and the actual implementation will be determined by the service provider.</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Injectable <span class="token punctuation">}</span> from <span class="token string">&apos;@angular/core&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Logger <span class="token punctuation">}</span> from <span class="token string">&apos;@zerothstack/core/server&apos;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ExampleUtil</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">protected</span> logger<span class="token punctuation">:</span> Logger<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Hello World`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>In the <code>./src/server/main.ts</code> file, the specific implementation is defined with</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">let</span> providers<span class="token punctuation">:</span> ProviderDefinition<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>provide<span class="token punctuation">:</span> Logger<span class="token punctuation">,</span> useClass<span class="token punctuation">:</span> ConsoleLogger<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>For more information on registering and resolving dependencies, see <a target="_blank" href="http://localhost:8080/guide/application-lifecycle/#3-provider-registration">the provider registration guide</a>; </p>
+<h2 id="methods"><a class="heading-anchor" href="#methods"><span></span></a>Methods</h2>
+<p>The logger provides methods for the eight logging levels defined in <a target="_blank" href="http://tools.ietf.org/html/rfc5424">RFC 5424</a>: 
+emergency, alert, critical, error, warning, notice, info and debug.</p>
+<pre class="line-numbers"><code class="language-typescript">logger<span class="token punctuation">.</span><span class="token function">debug</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Current request`</span></span><span class="token punctuation">,</span> request<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`User </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>username<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> logged in`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+logger<span class="token punctuation">.</span><span class="token function">notice</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`User </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>username<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> had 3 failed password attempts`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+logger<span class="token punctuation">.</span><span class="token function">warning</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Response took </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>responseTime<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">. This is far higher than normal`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+logger<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Query failed`</span></span><span class="token punctuation">,</span> e<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+logger<span class="token punctuation">.</span><span class="token function">critical</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Redis connection failed`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+logger<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`S3 Bucket is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>percentage<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">% full`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+logger<span class="token punctuation">.</span><span class="token function">emergency</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`The server is on fire!`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="log-source"><a class="heading-anchor" href="#log-source"><span></span></a>Log Source</h3>
+<p>To define the source of a log, first chain on <code>.source(&apos;&lt;source&gt;&apos;)</code> to your log.
+Depending on the implementation, this will have a different effect. With the <code>ConsoleLogger</code> implementation, this prefixes
+<code>[&lt;source&gt;]</code> to the log line.</p>
+<p>For example</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">source</span><span class="token punctuation">(</span><span class="token string">&apos;MyController&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Hello World`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Will output</p>
+<pre><code>[12:05:21] [MyController] Hello World
+</code></pre><h2 id="log-verbosity-level"><a class="heading-anchor" href="#log-verbosity-level"><span></span></a>Log verbosity level</h2>
+<p>In the <code>.env</code> configuration, there is an entry for <code>LOG_LEVEL</code>. This value can be one of 
+<code>none</code>, <code>error</code>, <code>info</code>, <code>verbose</code> or <code>silly</code></p>
+<p>Each log type has a default verbosity, meaning that for example if you have configured <code>LOG_LEVEL=error</code>, only the
+error level messages will be logged.</p>
+<p>The verbosity levels work like the following table:</p>
+<pre><code>| Log Level | Verbosity Level |
+|-----------|-----------------|
+| emergency | &gt;= error        |
+| critical  | &gt;= error        |
+| error     | &gt;= error        |
+| warning   | &gt;= info         |
+| notice    | &gt;= info         |
+| debug     | &gt;= verbose      |
+</code></pre><p>You will notices that <code>silly</code> is not listed in the table. This is because to mark a log as only displaying when level is
+<code>silly</code>, you need to chain <code>.silly</code> into the command.</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">//do something that throws error</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>logger<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">.</span>silly<span class="token punctuation">.</span><span class="token function">debug</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>stack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>In the above example, the error message will always log (unless level is <code>none</code>), and the debug of the stack trace will
+<em>only</em> log if you have log level <code>silly</code>. Despite debug having the default level <code>verbose</code>, the <code>.silly</code> modifier overrides
+ that rule.</p>
+<p>There is also a chainable <code>.verbose</code> modifier available to force a log message to only show when log level is <code>verbose</code>
+(or <code>silly</code>).</p>
+<h2 id="implementations"><a class="heading-anchor" href="#implementations"><span></span></a>Implementations</h2>
+<p>As there are many different ways to log, there can be multiple implementations of the abstract <code>Logger</code> class.</p>
+<h3 id="-consolelogger-"><a class="heading-anchor" href="#-consolelogger-"><span></span></a><code>ConsoleLogger</code></h3>
+<p>This is the most basic, it logs straight to the console. You probably want to use this one in development.</p>
+<p>Any non-string item passed as message is parsed by <code>util.inspect</code> which will nicely syntax highlight the object.</p>
+<p>The different log levels are colour coded, to make it easy to differentiate the different log types.</p>
+<h3 id="-mocklogger-"><a class="heading-anchor" href="#-mocklogger-"><span></span></a><code>MockLogger</code></h3>
+<p>Use this implementation in your unit tests to avoid any unwanted output to the console. The mock logger simply provides
+implementations for the abstract <code>Logger</code> class, and does nothing with the logs.</p>
+<p>You can utilise the <code>MockLogger</code> in tests to assert logs by spying on the <code>persistLog</code> method.</p>
+<p>For example:</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">const</span> loggerSpy <span class="token operator">=</span> <span class="token function">spyOn</span><span class="token punctuation">(</span>exampleService<span class="token punctuation">.</span>logger<span class="token punctuation">,</span> <span class="token string">&apos;persistLog&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+exampleService<span class="token punctuation">.</span><span class="token function">someMethodThatCallsLog</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">expect</span><span class="token punctuation">(</span>loggerSpy<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toHaveBeenCalledWith</span><span class="token punctuation">(</span><span class="token string">&apos;info&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;Hello world&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Note that the <code>persistLog</code> method takes the log message arguments as an array</p>
+<h2 id="planned-implementations"><a class="heading-anchor" href="#planned-implementations"><span></span></a>Planned Implementations</h2>
+<ul>
+<li><a target="_blank" href="https://github.com/winstonjs/winston">Winston</a></li>
+</ul>
+</div>
+    </div>
+</main>
+
+
+    <footer class="page-footer grey">
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by <a class="brown-text text-lighten-3" rel="author" href="http://twitter.com/zak">Zak Henry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <section class="social">
+                
+                        <div class="row">
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zeroth&repo=zerothstack&type=star&count=true&size=large&v=2"
+                                    frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        </div>
+                
+                
+                
+                
+                </section>            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+    </body>
+</html>

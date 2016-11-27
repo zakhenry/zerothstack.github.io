@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Exceptions</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <link rel="stylesheet" href="/assets/css/prism.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+
+    </head>
+    <body>
+
+<header>
+
+        <a href="https://github.com/zerothstack/zeroth#readme">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                 alt="Fork me on GitHub"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+    <nav class="top-nav" role="navigation">
+        <div class="container">
+            <a href="#" data-activates="nav-mobile"
+               class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <div class="nav-wrapper container">
+            <ul class="left">
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.0.0.1-0</a></li>
+            </ul>
+            <ul class="right">
+                    <li class="active"><a href="/guide">Developer Guide</a></li>
+                    <li class=""><a href="/api">API</a></li>
+                    <li class=""><a href="/articles">Articles</a></li>
+                    <li class=""><a href="/changelog">Changelog</a></li>
+                    <li class=""><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="/" class="brand-logo">
+                    <img src="/assets/image/logo.svg" alt="Logo">
+                </a>        </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="active collapsible-header waves-effect waves-grey">Developer Guide</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/guide/quick-start">
+                                                    <span>Quick Start</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/application-lifecycle">
+                                                    <span>Application Lifecycle</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/cli">
+                                                    <span>CLI</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/configuration">
+                                                    <span>Configuration</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/controllers">
+                                                    <span>Controllers</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/database">
+                                                    <span>Database</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/dependency-injection">
+                                                    <span>Dependency Injection</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/deployment">
+                                                    <span>Deployment</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/documentation">
+                                                    <span>Documentation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/email">
+                                                    <span>Email</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="/guide/exceptions">
+                                                    <span>Exceptions</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/logging">
+                                                    <span>Logging</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/middleware">
+                                                    <span>Middleware</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/migrations">
+                                                    <span>Migrations</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/model-stores">
+                                                    <span>Model Stores</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/models">
+                                                    <span>Models</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/queues">
+                                                    <span>Queues</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/routing">
+                                                    <span>Routing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/seeding">
+                                                    <span>Seeding</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/services">
+                                                    <span>Services</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/testing">
+                                                    <span>Testing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/validation">
+                                                    <span>Validation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/api" class="waves-effect waves-grey">API</a>
+                    </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class=" collapsible-header waves-effect waves-grey">Articles</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/articles/zeroth-for-the-angular-developer">
+                                                    <span>Zeroth for the Angular developer</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/articles/why-bother">
+                                                    <span>Why bother?</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/changelog" class="waves-effect waves-grey">Changelog</a>
+                    </li>
+                    <li class="bold ">
+                        <a href="/faq" class="waves-effect waves-grey">FAQ</a>
+                    </li>
+        </ul>
+    
+</header><main>
+    <div class="container">
+        <h1>Exceptions</h1>
+
+        <ul class="section table-of-contents">
+                <li><a href="#example"># Example</a></li>
+        </ul>
+
+        <div class="contents"><p>Zeroth provides a number of built-in <code>HttpExceptions</code> that should be thrown rather than <code>Error</code> when an unexpected 
+event occurs. This allows the call stack handler to inspect the exception status code, and return that to the client so
+it can handle the error in a meaningful way.</p>
+<p>The exceptions that are available are:</p>
+<ul>
+<li>BadRequestException (code 400)</li>
+<li>UnauthorizedException (code 401)</li>
+<li>PaymentRequiredException (code 402)</li>
+<li>ForbiddenException (code 403)</li>
+<li>NotFoundException (code 404)</li>
+<li>MethodNotAllowedException (code 405)</li>
+<li>NotAcceptableException (code 406)</li>
+<li>ProxyAuthenticationRequiredException (code 407)</li>
+<li>RequestTimeoutException (code 408)</li>
+<li>ConflictException (code 409)</li>
+<li>GoneException (code 410)</li>
+<li>LengthRequiredException (code 411)</li>
+<li>PreconditionFailedException (code 412)</li>
+<li>PayloadTooLargeException (code 413)</li>
+<li>URITooLongException (code 414)</li>
+<li>UnsupportedMediaTypeException (code 415)</li>
+<li>RangeNotSatisfiableException (code 416)</li>
+<li>ExpectationFailedException (code 417)</li>
+<li>UnprocessableEntityException (code 422)</li>
+<li>TooManyRequestsException (code 429)</li>
+<li>UnavailableForLegalReasonsException (code 451)</li>
+<li>InternalServerErrorException (code 500)</li>
+<li>NotImplementedException (code 501)</li>
+<li>ServiceUnavailableException (code 503)</li>
+<li>InsufficientStorageException (code 507)</li>
+</ul>
+<h2 id="example"><a class="heading-anchor" href="#example"><span></span></a>Example</h2>
+<p>In a database store, the NotFoundException is thrown when the record is not present in the database:</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">public</span> <span class="token function">findOne</span><span class="token punctuation">(</span>id<span class="token punctuation">:</span> identifier<span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>orm<span class="token punctuation">.</span><span class="token function">findByPrimary</span><span class="token punctuation">(</span><span class="token operator">&lt;</span><span class="token keyword">number</span><span class="token operator">|</span><span class="token keyword">string</span><span class="token operator">&gt;</span>id<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>modelData<span class="token punctuation">:</span> Instance<span class="token operator">&lt;</span><span class="token keyword">any</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">:</span> T <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>modelData<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">NotFoundException</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Model not found for id [</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">]`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">this<span class="token punctuation">.</span>modelStatic</span><span class="token punctuation">(</span>modelData<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The exception is eventually caught by the stack handler, and will return the following response:</p>
+<pre><code>HTTP/1.1 404 Not Found
+{
+  &quot;message&quot;: &quot;Model not found for id [72eed629-c4ab-4520-a987-4ea26b134d8c]&quot; 
+}
+</code></pre></div>
+    </div>
+</main>
+
+
+    <footer class="page-footer grey">
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by <a class="brown-text text-lighten-3" rel="author" href="http://twitter.com/zak">Zak Henry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <section class="social">
+                
+                        <div class="row">
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zeroth&repo=zerothstack&type=star&count=true&size=large&v=2"
+                                    frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        </div>
+                
+                
+                
+                
+                </section>            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+    </body>
+</html>

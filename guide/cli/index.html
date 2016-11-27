@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>CLI</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <link rel="stylesheet" href="/assets/css/prism.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+
+    </head>
+    <body>
+
+<header>
+
+        <a href="https://github.com/zerothstack/zeroth#readme">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                 alt="Fork me on GitHub"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+    <nav class="top-nav" role="navigation">
+        <div class="container">
+            <a href="#" data-activates="nav-mobile"
+               class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <div class="nav-wrapper container">
+            <ul class="left">
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.0.0.1-0</a></li>
+            </ul>
+            <ul class="right">
+                    <li class="active"><a href="/guide">Developer Guide</a></li>
+                    <li class=""><a href="/api">API</a></li>
+                    <li class=""><a href="/articles">Articles</a></li>
+                    <li class=""><a href="/changelog">Changelog</a></li>
+                    <li class=""><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="/" class="brand-logo">
+                    <img src="/assets/image/logo.svg" alt="Logo">
+                </a>        </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="active collapsible-header waves-effect waves-grey">Developer Guide</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/guide/quick-start">
+                                                    <span>Quick Start</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/application-lifecycle">
+                                                    <span>Application Lifecycle</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="/guide/cli">
+                                                    <span>CLI</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/configuration">
+                                                    <span>Configuration</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/controllers">
+                                                    <span>Controllers</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/database">
+                                                    <span>Database</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/dependency-injection">
+                                                    <span>Dependency Injection</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/deployment">
+                                                    <span>Deployment</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/documentation">
+                                                    <span>Documentation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/email">
+                                                    <span>Email</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/exceptions">
+                                                    <span>Exceptions</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/logging">
+                                                    <span>Logging</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/middleware">
+                                                    <span>Middleware</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/migrations">
+                                                    <span>Migrations</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/model-stores">
+                                                    <span>Model Stores</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/models">
+                                                    <span>Models</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/queues">
+                                                    <span>Queues</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/routing">
+                                                    <span>Routing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/seeding">
+                                                    <span>Seeding</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/services">
+                                                    <span>Services</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/testing">
+                                                    <span>Testing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/validation">
+                                                    <span>Validation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/api" class="waves-effect waves-grey">API</a>
+                    </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class=" collapsible-header waves-effect waves-grey">Articles</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/articles/zeroth-for-the-angular-developer">
+                                                    <span>Zeroth for the Angular developer</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/articles/why-bother">
+                                                    <span>Why bother?</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/changelog" class="waves-effect waves-grey">Changelog</a>
+                    </li>
+                    <li class="bold ">
+                        <a href="/faq" class="waves-effect waves-grey">FAQ</a>
+                    </li>
+        </ul>
+    
+</header><main>
+    <div class="container">
+        <h1>CLI</h1>
+
+        <ul class="section table-of-contents">
+                <li><a href="#introduction"># Introduction</a></li>
+                <li><a href="#installation"># Installation</a></li>
+                <li><a href="#-zeroth-js-file-configuration"># zeroth.js file configuration</a></li>
+                <li><a href="#-new-zerothproject-__dirname-">&emsp;# new ZerothProject(__dirname)</a></li>
+                <li><a href="#-configurepaths-config-">&emsp;# configurePaths(config)</a></li>
+                <li><a href="#-configuredeployment-config-">&emsp;# configureDeployment(config)</a></li>
+                <li><a href="#-configuredocs-config-">&emsp;# configureDocs(config)</a></li>
+                <li><a href="#-configuresocial-config-">&emsp;# configureSocial(config)</a></li>
+                <li><a href="#-registercommand-command-">&emsp;# registerCommand(command)</a></li>
+                <li><a href="#remote-cli"># Remote CLI</a></li>
+                <li><a href="#connecting-to-the-remote-cli">&emsp;# Connecting to the remote CLI</a></li>
+                <li><a href="#adding-custom-commands-to-the-remote-cli">&emsp;# Adding custom commands to the remote cli</a></li>
+                <li><a href="#uninstall"># Uninstall</a></li>
+        </ul>
+
+        <div class="contents"><p><img src="/assets/image/zeroth-cli.png" alt="CLI Screenshot"></p>
+<h2 id="introduction"><a class="heading-anchor" href="#introduction"><span></span></a>Introduction</h2>
+<p>Zeroth provides a commandline environment that has two major parts - the build tools and the runtime tools. The build
+tools are programs that build the various components of a Zeroth app; typescript compilation, webpack building, 
+livereload handling etc. The runtime tools are provided by your application (or the core) at runtime, and are custom 
+tools that affect the runtime of your server instance. This could include tools like running migrations, reindexing
+Elastic search, creating users, batch database operations etc - the possibilities are endless.</p>
+<p>The zeroth cli operates within it&#x2019;s own pseudo shell, so the commands available are limited to Zeroth specific
+ commands, or ones you have created yourself.</p>
+<h2 id="installation"><a class="heading-anchor" href="#installation"><span></span></a>Installation</h2>
+<p>To install the cli if you haven&#x2019;t done so in the <a href="/guide/quick-start">quickstart</a>, run the following:</p>
+<pre class="line-numbers"><code class="language-bash">npm <span class="token function">install</span> -g @zerothstack/toolchain
+</code></pre>
+<p>This will install the cli tool globally, which will allow you to initialize new project/modules outside of your current project.</p>
+<p>The installation process symlinks both <code>zeroth</code> and <code>z</code> to your <code>$prefix/bin</code> location so you can start the zeroth cli with just <code>z</code> if you prefer (it&#x2019;s easier to type!).</p>
+<p>Once you&#x2019;ve installed the cli, create a new empty directory and run </p>
+<pre class="line-numbers"><code class="language-bash">zeroth
+</code></pre>
+<p>This will prompt you to initialize a new project, then take you on a tour of the features.</p>
+<p>If you already have a Zeroth project up and running and want to take the tour again, simply run <code>zeroth</code> (or <code>z</code>!) to enter 
+the shell, then run <code>tour</code> to start the tour. (Note this command is hidden from the <code>help</code> output as you won&#x2019;t need it often) </p>
+<p><em>Note that the quickstart requires <code>@zerothstack/toolchain</code> as a <code>devDependency</code> so if you don&#x2019;t want the cli installed globally it will still work just fine when you are executing from your project directory.</em></p>
+<h2 id="-zeroth-js-file-configuration"><a class="heading-anchor" href="#-zeroth-js-file-configuration"><span></span></a><code>zeroth.js</code> file configuration</h2>
+<p>You will notice in the root of your project there is a <code>zeroth.js</code> file. This is akin to a <code>gulpfile</code> or <code>karma.conf.js</code> file. It is used to set the configuration for the toolchain cli.</p>
+<p>Note that this is a javascript file - unfortunately you cant use typescript here as it is not pre-compiled by the toolchain - that would be too slow.</p>
+<p>If this is not present, the cli will still work with default values applied.</p>
+<h3 id="-new-zerothproject-__dirname-"><a class="heading-anchor" href="#-new-zerothproject-__dirname-"><span></span></a><code>new ZerothProject(__dirname)</code></h3>
+<p>A new project can be created with</p>
+<pre class="line-numbers"><code class="language-javascript"><span class="token keyword">let</span> <span class="token punctuation">{</span>ZerothProject<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;@zerothstack/toolchain&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> project <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ZerothProject</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// it is critical that the project is exported as the  </span>
+<span class="token comment" spellcheck="true">// toolchain `requires` this file to get the configuration</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> project<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="-configurepaths-config-"><a class="heading-anchor" href="#-configurepaths-config-"><span></span></a><code>configurePaths(config)</code></h3>
+<p>Configure the paths. </p>
+<p>config is merged with the defaults:</p>
+<pre class="line-numbers"><code class="language-javascript"><span class="token punctuation">.</span><span class="token function">configurePaths</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  source<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    base<span class="token punctuation">:</span> <span class="token string">&apos;./src&apos;</span><span class="token punctuation">,</span>
+    server<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      tsConfig<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>basePath <span class="token operator">+</span> <span class="token string">&apos;/tsconfig.server.json&apos;</span><span class="token punctuation">,</span>
+      ts<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>src<span class="token operator">/</span>server<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>src<span class="token operator">/</span>common<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      definitions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>typings<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>d<span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+        <span class="token string">&apos;!./typings/index.d.ts&apos;</span><span class="token punctuation">,</span>
+        &apos;<span class="token operator">!</span><span class="token punctuation">.</span><span class="token operator">/</span>typings<span class="token comment" spellcheck="true">/**/</span>core<span class="token operator">-</span>js<span class="token comment" spellcheck="true">/*.d.ts&apos;,
+      ]
+    },
+    browser: {
+      tsConfig: this.basePath + &apos;/tsconfig.browser.json&apos;,
+      ts: [
+        &apos;./src/browser/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>src<span class="token operator">/</span>common<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      definitions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>typings<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>d<span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+        <span class="token string">&apos;!./typings/index.d.ts&apos;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    all<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      tsConfig<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>basePath <span class="token operator">+</span> <span class="token string">&apos;/tsconfig.json&apos;</span><span class="token punctuation">,</span>
+      ts<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>src<span class="token operator">/</span>browser<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>src<span class="token operator">/</span>common<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>src<span class="token operator">/</span>server<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      definitions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        &apos;<span class="token punctuation">.</span><span class="token operator">/</span>typings<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>d<span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+        <span class="token string">&apos;!./typings/index.d.ts&apos;</span><span class="token punctuation">,</span>
+        &apos;<span class="token operator">!</span><span class="token punctuation">.</span><span class="token operator">/</span>typings<span class="token comment" spellcheck="true">/**/</span>core<span class="token operator">-</span>js<span class="token operator">/</span><span class="token operator">*</span><span class="token punctuation">.</span>d<span class="token punctuation">.</span>ts&apos;<span class="token punctuation">,</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    docs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      base<span class="token punctuation">:</span> <span class="token string">&apos;./docs&apos;</span><span class="token punctuation">,</span>
+      root<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>basePath<span class="token punctuation">,</span>
+      templates<span class="token punctuation">:</span> <span class="token string">&apos;templates&apos;</span><span class="token punctuation">,</span>
+      partials<span class="token punctuation">:</span> <span class="token string">&apos;templates/partials&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  destination<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    lib<span class="token punctuation">:</span> <span class="token string">&apos;./lib&apos;</span><span class="token punctuation">,</span>
+    dist<span class="token punctuation">:</span> <span class="token string">&apos;./dist&apos;</span><span class="token punctuation">,</span>
+    coverage<span class="token punctuation">:</span> <span class="token string">&apos;./coverage&apos;</span><span class="token punctuation">,</span>
+    server<span class="token punctuation">:</span> <span class="token string">&apos;lib/server&apos;</span><span class="token punctuation">,</span>
+    browser<span class="token punctuation">:</span> <span class="token string">&apos;dist/browser&apos;</span><span class="token punctuation">,</span>
+    docs<span class="token punctuation">:</span> <span class="token string">&apos;./dist-docs&apos;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="-configuredeployment-config-"><a class="heading-anchor" href="#-configuredeployment-config-"><span></span></a><code>configureDeployment(config)</code></h3>
+<p>Configure the deployment options. </p>
+<p>config is merged with the defaults:</p>
+<pre class="line-numbers"><code class="language-javascript"><span class="token punctuation">.</span><span class="token function">configureDeployment</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  docs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    repo<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// remote repository to deploy to, defaults to the current `config.docs.remote` when set to `null`</span>
+    remote<span class="token punctuation">:</span> <span class="token string">&apos;origin&apos;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// the name of the remote to look up</span>
+    branch<span class="token punctuation">:</span> <span class="token string">&apos;gh-pages&apos;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// what branch to deploy to</span>
+    dir<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>paths<span class="token punctuation">.</span>destination<span class="token punctuation">.</span>docs <span class="token comment" spellcheck="true">// location of the documentation output</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="-configuredocs-config-"><a class="heading-anchor" href="#-configuredocs-config-"><span></span></a><code>configureDocs(config)</code></h3>
+<p>Configure the docs options. </p>
+<p>config is merged with the defaults:</p>
+<pre class="line-numbers"><code class="language-javascript"><span class="token punctuation">.</span><span class="token function">configureDocs</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  meta<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//any attribute listed here is made available to the context of all handlebars templates</span>
+    gaCode<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// Google Analytic tracking code. If null the tracking snippet will not be embedded</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="-configuresocial-config-"><a class="heading-anchor" href="#-configuresocial-config-"><span></span></a><code>configureSocial(config)</code></h3>
+<p>Configure the social options. </p>
+<p>config is merged with the defaults:</p>
+<pre class="line-numbers"><code class="language-javascript"><span class="token punctuation">.</span><span class="token function">configureSocial</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  github<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    forkMe<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//show the github fork me ribbon on top right</span>
+    star<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token comment" spellcheck="true">// show the stars count badge</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  twitter<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//twitter username to add &quot;Follow @username&quot; badge</span>
+  gitter<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment" spellcheck="true">//gitter user/repo to link to eg zeroth/zeroth</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="-registercommand-command-"><a class="heading-anchor" href="#-registercommand-command-"><span></span></a><code>registerCommand(command)</code></h3>
+<p>In addition to the supplied commands in the toolchain, you may register new commands.</p>
+<p>The toolchain uses <a target="_blank" href="https://github.com/dthree/vantage">Vantage</a> (which is an extension of <a target="_blank" href="http://vorpal.js.org/">Vorpal</a>) for command handling, and the <code>registerCommand</code> callback 
+ supplies an instance of vantage and the instance of the project.</p>
+<p>Visit the Vorpal documentation for instructions on how to define your own commands. </p>
+<pre class="line-numbers"><code class="language-javascript"><span class="token punctuation">.</span><span class="token function">registerCommand</span><span class="token punctuation">(</span><span class="token punctuation">(</span>cli<span class="token punctuation">,</span> projectInstance<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  cli<span class="token punctuation">.</span><span class="token function">command</span><span class="token punctuation">(</span><span class="token string">&apos;example&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Outputs example text&apos;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>args<span class="token punctuation">,</span> callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;This is a custom command example&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>An instance of Gulp is attached to the <code>projectInstance</code> too, so you can create gulp commands and register them
+ to the zeroth cli.</p>
+<p>Example <code>zeroth.js</code> file that adds custom Sass gulp command:</p>
+<pre class="line-numbers"><code class="language-javascript"><span class="token keyword">const</span> sass <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;gulp-sass&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span>ZerothProject<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;@zerothstack/toolchain&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> project <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ZerothProject</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+project<span class="token punctuation">.</span><span class="token function">registerCommand</span><span class="token punctuation">(</span><span class="token punctuation">(</span>cli<span class="token punctuation">,</span> projectInstance<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+
+  cli<span class="token punctuation">.</span><span class="token function">command</span><span class="token punctuation">(</span><span class="token string">&apos;sass&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Compiles Sass files&apos;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>args<span class="token punctuation">,</span> callback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      projectInstance<span class="token punctuation">.</span>gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>&apos;<span class="token punctuation">.</span><span class="token operator">/</span>sass<span class="token comment" spellcheck="true">/**/</span><span class="token operator">*</span><span class="token punctuation">.</span>scss&apos;<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">sass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&apos;error&apos;</span><span class="token punctuation">,</span> sass<span class="token punctuation">.</span>logError<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>projectInstance<span class="token punctuation">.</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">&apos;./css&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&apos;finish&apos;</span><span class="token punctuation">,</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//this is required to notify to Vantage the command is finished</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> project<span class="token punctuation">;</span>
+</code></pre>
+<h2 id="remote-cli"><a class="heading-anchor" href="#remote-cli"><span></span></a>Remote CLI</h2>
+<p>The cli is capable of connecting to the remote runtime to execute commands defined in the server context
+ and have access to runtime variables of that server. This connection is used to run migrations, seeders,
+ tail logs, view loaded route configuration etc.</p>
+<h3 id="connecting-to-the-remote-cli"><a class="heading-anchor" href="#connecting-to-the-remote-cli"><span></span></a>Connecting to the remote CLI</h3>
+<p>To connect to the remote cli, simply run <code>remote</code> when in a zeroth shell session</p>
+<pre class="line-numbers"><code class="language-bash">zeroth~$ remote
+</code></pre>
+<p>You will have set up your authentication keys in the tour, which are used to generate a JSON Web Token
+which is signed with your private key, then passed through to the runtime server, which authenticates
+your key against it&#x2019;s copy of your public key in the <code>./keys/known_hosts</code> directory.</p>
+<p>This public/private key pattern will be familiar to those who use SSH authentication, but note that
+this is not SSH authentication so you won&#x2019;t be able to use any SSH client to run this process for you.</p>
+<h3 id="adding-custom-commands-to-the-remote-cli"><a class="heading-anchor" href="#adding-custom-commands-to-the-remote-cli"><span></span></a>Adding custom commands to the remote cli</h3>
+<p>Currently there is not API to add custom commands to the existing instance of <code>RemoteCli</code>, however
+until this feature is implemented you may simply <code>extends RemoteCli</code> and substitute your own class
+using the provider.</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyRemoteCli</span> <span class="token keyword">extends</span> <span class="token class-name">RemoteCli</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span>logger<span class="token punctuation">:</span> Logger<span class="token punctuation">,</span> injector<span class="token punctuation">:</span> Injector<span class="token punctuation">,</span> authService<span class="token punctuation">:</span> AuthService<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>logger<span class="token punctuation">,</span> injector<span class="token punctuation">,</span> authService<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">protected</span> <span class="token function">registerCommands</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">this</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">registerCommands</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>vantage<span class="token punctuation">.</span><span class="token function">command</span><span class="token punctuation">(</span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">description</span><span class="token punctuation">(</span><span class="token string">&apos;outputs bar&apos;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>args<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">,</span> callback<span class="token punctuation">:</span> <span class="token keyword">Function</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;bar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Like the local CLI, the remote cli uses <a target="_blank" href="https://github.com/dthree/vantage">Vantage</a>, so you can implement your own custom tasks with
+ the same syntax that you would for the local tasks. The only difference of course being that as
+ you are defining the task in the context of the server, you have access to all injected dependencies.</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token comment" spellcheck="true">// in your ./src/server/main.ts file</span>
+<span class="token punctuation">{</span> provide<span class="token punctuation">:</span> RemoteCli<span class="token punctuation">,</span> useClass<span class="token punctuation">:</span> MyRemoteCli<span class="token punctuation">,</span> <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="uninstall"><a class="heading-anchor" href="#uninstall"><span></span></a>Uninstall</h2>
+<p>To remove the cli, run the following command:</p>
+<pre class="line-numbers"><code class="language-bash">npm <span class="token function">rm</span> -g @zerothstack/toolchain
+</code></pre>
+<p><em>Sorry to see you go!</em></p>
+</div>
+    </div>
+</main>
+
+
+    <footer class="page-footer grey">
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by <a class="brown-text text-lighten-3" rel="author" href="http://twitter.com/zak">Zak Henry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <section class="social">
+                
+                        <div class="row">
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zeroth&repo=zerothstack&type=star&count=true&size=large&v=2"
+                                    frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        </div>
+                
+                
+                
+                
+                </section>            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+    </body>
+</html>

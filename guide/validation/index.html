@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Validation</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <link rel="stylesheet" href="/assets/css/prism.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+
+    </head>
+    <body>
+
+<header>
+
+        <a href="https://github.com/zerothstack/zeroth#readme">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                 alt="Fork me on GitHub"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+    <nav class="top-nav" role="navigation">
+        <div class="container">
+            <a href="#" data-activates="nav-mobile"
+               class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <div class="nav-wrapper container">
+            <ul class="left">
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.0.0.1-0</a></li>
+            </ul>
+            <ul class="right">
+                    <li class="active"><a href="/guide">Developer Guide</a></li>
+                    <li class=""><a href="/api">API</a></li>
+                    <li class=""><a href="/articles">Articles</a></li>
+                    <li class=""><a href="/changelog">Changelog</a></li>
+                    <li class=""><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="/" class="brand-logo">
+                    <img src="/assets/image/logo.svg" alt="Logo">
+                </a>        </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="active collapsible-header waves-effect waves-grey">Developer Guide</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/guide/quick-start">
+                                                    <span>Quick Start</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/application-lifecycle">
+                                                    <span>Application Lifecycle</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/cli">
+                                                    <span>CLI</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/configuration">
+                                                    <span>Configuration</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/controllers">
+                                                    <span>Controllers</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/database">
+                                                    <span>Database</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/dependency-injection">
+                                                    <span>Dependency Injection</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/deployment">
+                                                    <span>Deployment</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/documentation">
+                                                    <span>Documentation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/email">
+                                                    <span>Email</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/exceptions">
+                                                    <span>Exceptions</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/logging">
+                                                    <span>Logging</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/middleware">
+                                                    <span>Middleware</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/migrations">
+                                                    <span>Migrations</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/model-stores">
+                                                    <span>Model Stores</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/models">
+                                                    <span>Models</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/queues">
+                                                    <span>Queues</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/routing">
+                                                    <span>Routing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/seeding">
+                                                    <span>Seeding</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/services">
+                                                    <span>Services</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/testing">
+                                                    <span>Testing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="/guide/validation">
+                                                    <span>Validation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/api" class="waves-effect waves-grey">API</a>
+                    </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class=" collapsible-header waves-effect waves-grey">Articles</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/articles/zeroth-for-the-angular-developer">
+                                                    <span>Zeroth for the Angular developer</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/articles/why-bother">
+                                                    <span>Why bother?</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/changelog" class="waves-effect waves-grey">Changelog</a>
+                    </li>
+                    <li class="bold ">
+                        <a href="/faq" class="waves-effect waves-grey">FAQ</a>
+                    </li>
+        </ul>
+    
+</header><main>
+    <div class="container">
+        <h1>Validation</h1>
+
+        <ul class="section table-of-contents">
+                <li><a href="#overview"># Overview</a></li>
+                <li><a href="#usage"># Usage</a></li>
+                <li><a href="#custom-validators"># Custom validators</a></li>
+                <li><a href="#optional-dependencies">&emsp;# Optional dependencies</a></li>
+                <li><a href="#async-validators"># Async validators</a></li>
+        </ul>
+
+        <div class="contents"><h2 id="overview"><a class="heading-anchor" href="#overview"><span></span></a>Overview</h2>
+<p>Validation is provided by <a target="_blank" href="https://github.com/pleerock/class-validator">class-validator</a> (built by <a target="_blank" href="https://github.com/pleerock">Umed Khudoiberdiev</a>) validation works on both browser
+side and server side, and is invoked with the <code>Store.validate</code> method.</p>
+<h2 id="usage"><a class="heading-anchor" href="#usage"><span></span></a>Usage</h2>
+<p>You can use any of the methods in <a target="_blank" href="https://github.com/pleerock/class-validator">class-validator</a>, but make sure to import the methods from <code>@zerothstack/core/validation</code>.
+This is for two reasons:</p>
+<ol>
+<li>You are importing from a location common to the core and your modules. This allows them to use the same <code>MetadataStorage</code> singleton
+and custom functions register to the same store. </li>
+<li>Any custom methods defined in <code>@zerothstack/core</code> will be available from the same source.</li>
+</ol>
+<p>If you don&#x2019;t do this - property validation <strong>will not register</strong> and validation will pass on any field without a validator
+listed, so don&#x2019;t forget!</p>
+<h2 id="custom-validators"><a class="heading-anchor" href="#custom-validators"><span></span></a>Custom validators</h2>
+<p>As described in <a target="_blank" href="https://github.com/pleerock/class-validator#custom-validation-classes">the class-validator docs</a> you can register custom validators. </p>
+<h4 id="-injectable-validator-classes"><a class="heading-anchor" href="#-injectable-validator-classes"><span></span></a><code>@Injectable</code> validator classes</h4>
+<p>The core has configured
+the validator to use the current <code>Injector</code>, so your class validators can inject dependencies too.</p>
+<p>For example:</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Injectable <span class="token punctuation">}</span> from <span class="token string">&apos;@angular/core&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Model <span class="token punctuation">}</span> from <span class="token string">&apos;../models/model&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Validate<span class="token punctuation">,</span> ValidatorConstraint<span class="token punctuation">,</span> ValidatorConstraintInterface <span class="token punctuation">}</span> from <span class="token string">&apos;@zerothstack/core/validation&apos;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">TruthyService</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">public</span> <span class="token function">isTruthy</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">boolean</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">!</span><span class="token operator">!</span>value<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+@<span class="token function">ValidatorConstraint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">CustomTruthyValidator</span> <span class="token keyword">implements</span> <span class="token class-name">ValidatorConstraintInterface</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> validationService<span class="token punctuation">:</span> TruthyService<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token function">validate</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">boolean</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>validationService<span class="token punctuation">.</span><span class="token function">isTruthy</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Thing</span> <span class="token keyword">extends</span> <span class="token class-name">Model</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">Validate</span><span class="token punctuation">(</span>CustomTruthyValidator<span class="token punctuation">)</span>
+  <span class="token keyword">public</span> truthyValue<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>In this <em>(overly complex)</em> example the <code>Thing</code> model has a custom validator <code>CustomTruthyValidator</code> assigned to it.
+This validator implements the <code>ValidatorConstraintInterface</code> class-validator needs, which uses the injected <code>TruthyService</code>.</p>
+<h3 id="optional-dependencies"><a class="heading-anchor" href="#optional-dependencies"><span></span></a>Optional dependencies</h3>
+<p>Sometimes you will want to register a custom validator that uses a dependency that is not available in all environments.
+If this is the case, make sure to decorate the injected paramater with <code>@Optional</code> so that the dependency injector know
+it can fail quietly if there is no registered injectable class.
+Make sure to return true in the <code>validate</code> function if the injector is not available:</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Injectable<span class="token punctuation">,</span> Optional <span class="token punctuation">}</span> from <span class="token string">&apos;@angular/core&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ValidatorConstraint<span class="token punctuation">,</span> ValidatorConstraintInterface <span class="token punctuation">}</span> from <span class="token string">&apos;@zerothstack/core/validation&apos;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+@<span class="token function">ValidatorConstraint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">RequiresServerValidator</span> <span class="token keyword">implements</span> <span class="token class-name">ValidatorConstraintInterface</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span>@Optional <span class="token keyword">private</span> server<span class="token punctuation">:</span> Server<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token function">validate</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">boolean</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>server<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>server<span class="token punctuation">.</span><span class="token function">checkSomething</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>It is recommended that you structure your application to avoid this however, as in general, you should be able to validate
+everything from the client side before sending data to the server. This makes for a significantly better user experience,
+as forms can show problems before they are submitted, not after.</p>
+<h2 id="async-validators"><a class="heading-anchor" href="#async-validators"><span></span></a>Async validators</h2>
+<p>Any custom validator can return a <code>Promise&lt;boolean&gt;</code> for asynchronous validation. Combined with dependency injection, 
+custom validators can perform complex checks on a model.</p>
+<p>Example:</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Injectable<span class="token punctuation">,</span> Optional <span class="token punctuation">}</span> from <span class="token string">&apos;@angular/core&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> UserStore <span class="token punctuation">}</span> from <span class="token string">&apos;../path/to/stores&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ValidatorConstraint<span class="token punctuation">,</span> ValidatorConstraintInterface <span class="token punctuation">}</span> from <span class="token string">&apos;@zerothstack/core/validation&apos;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+@<span class="token function">ValidatorConstraint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">UsernameExistsValidator</span> <span class="token keyword">implements</span> <span class="token class-name">ValidatorConstraintInterface</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> userStore<span class="token punctuation">:</span> UserStore<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token function">validate</span><span class="token punctuation">(</span>value<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span><span class="token keyword">boolean</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>userStore<span class="token punctuation">.</span><span class="token function">verifyUsernameExists</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+</div>
+    </div>
+</main>
+
+
+    <footer class="page-footer grey">
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by <a class="brown-text text-lighten-3" rel="author" href="http://twitter.com/zak">Zak Henry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <section class="social">
+                
+                        <div class="row">
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zeroth&repo=zerothstack&type=star&count=true&size=large&v=2"
+                                    frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        </div>
+                
+                
+                
+                
+                </section>            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Zeroth for the Angular developer</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <link rel="stylesheet" href="/assets/css/prism.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+
+    </head>
+    <body>
+
+<header>
+
+        <a href="https://github.com/zerothstack/zeroth#readme">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                 alt="Fork me on GitHub"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+    <nav class="top-nav" role="navigation">
+        <div class="container">
+            <a href="#" data-activates="nav-mobile"
+               class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <div class="nav-wrapper container">
+            <ul class="left">
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.0.0.1-0</a></li>
+            </ul>
+            <ul class="right">
+                    <li class=""><a href="/guide">Developer Guide</a></li>
+                    <li class=""><a href="/api">API</a></li>
+                    <li class="active"><a href="/articles">Articles</a></li>
+                    <li class=""><a href="/changelog">Changelog</a></li>
+                    <li class=""><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="/" class="brand-logo">
+                    <img src="/assets/image/logo.svg" alt="Logo">
+                </a>        </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class=" collapsible-header waves-effect waves-grey">Developer Guide</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/guide/quick-start">
+                                                    <span>Quick Start</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/application-lifecycle">
+                                                    <span>Application Lifecycle</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/cli">
+                                                    <span>CLI</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/configuration">
+                                                    <span>Configuration</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/controllers">
+                                                    <span>Controllers</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/database">
+                                                    <span>Database</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/dependency-injection">
+                                                    <span>Dependency Injection</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/deployment">
+                                                    <span>Deployment</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/documentation">
+                                                    <span>Documentation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/email">
+                                                    <span>Email</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/exceptions">
+                                                    <span>Exceptions</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/logging">
+                                                    <span>Logging</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/middleware">
+                                                    <span>Middleware</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/migrations">
+                                                    <span>Migrations</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/model-stores">
+                                                    <span>Model Stores</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/models">
+                                                    <span>Models</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/queues">
+                                                    <span>Queues</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/routing">
+                                                    <span>Routing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/seeding">
+                                                    <span>Seeding</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/services">
+                                                    <span>Services</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/testing">
+                                                    <span>Testing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/validation">
+                                                    <span>Validation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/api" class="waves-effect waves-grey">API</a>
+                    </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="active collapsible-header waves-effect waves-grey">Articles</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="active">
+                                                <a href="/articles/zeroth-for-the-angular-developer">
+                                                    <span>Zeroth for the Angular developer</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/articles/why-bother">
+                                                    <span>Why bother?</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/changelog" class="waves-effect waves-grey">Changelog</a>
+                    </li>
+                    <li class="bold ">
+                        <a href="/faq" class="waves-effect waves-grey">FAQ</a>
+                    </li>
+        </ul>
+    
+</header>
+<main>
+    <div class="container">
+        <h1>Zeroth for the Angular developer</h1>
+        <time>July 07, 2016</time>
+        <span class="right"><a class="brown-text text-lighten-3" rel="author" href="https://twitter.com/zak">Zak Henry</a></span>
+        <div class="contents"><hr>
+<p><em>This article is part 1 of a 4 part series on <strong> Zeroth for the [Angular/NodeJS/PHP/.NET] developer </strong>. Stay tuned for
+the next in the series. New articles will be announced on the <a target="_blank" href="https://twitter.com/zeroth">twitter page</a></em></p>
+<hr>
+<p>If you&#x2019;re an <a target="_blank" href="https://angular.io">Angular</a> developer looking into backend framework options for a new personal or work project, and have come
+up short on finding a JavaScript framework that is as powerful as Angular, look no further.</p>
+<p>Zeroth is a full stack framework that uses Angular 2 in the frontend, and uses the same design patterns developed by
+Angular to provide a backend framework. </p>
+<p>You may be immediately thinking that this is what <a target="_blank" href="https://universal.angular.io/">Angular Universal</a>,
+does, however Universal is simply server-side prerendering of your frontend application, whereas Zeroth includes a fully 
+fledged backend framework where you can interact with a Database, secure third party API&#x2019;s, and provide a REST API interface
+for other API consumers like iOS or Android.</p>
+<p><em>It is actually planned to integrate Universal into the Zeroth framework; we&#x2019;re just waiting for the general release of
+Angular so there is some stability.</em></p>
+<blockquote>
+<p>tl;dr Zeroth is not Angular Universal, it is mostly a backend NodeJS framework designed to integrate with Angular 2</p>
+</blockquote>
+<h2 id="familiar-look-feel"><a class="heading-anchor" href="#familiar-look-feel"><span></span></a>Familiar look &amp; feel</h2>
+<p>First and foremost, Zeroth is a <a target="_blank" href="http://www.typescriptlang.org/">TypeScript</a> framework. Like Angular 2, there is <em>technically</em> no reason why you can&#x2019;t
+use plain JavaScript, however because of the complexity of replicating the functionality of decorators and dependency 
+injection, you really are better off sticking to TypeScript. Currently there are no plans to offer compiling from <a target="_blank" href="https://www.dartlang.org/">Dart</a>.</p>
+<p>Zeroth uses the same dependency injector as Angular 2. Not just the same pattern, but the actual same code. This means
+that everything you have learned about how to manage providers and <code>@Injectable()</code> classes from Angular applies to Zeroth.</p>
+<p>Here is a basic backend controller, you can see the familiar <code>@Component()</code>-like pattern that is used.</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Injectable <span class="token punctuation">}</span> from <span class="token string">&apos;@angular/core&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ResourceController <span class="token punctuation">}</span> from <span class="token string">&apos;@zerothstack/core/server&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Logger<span class="token punctuation">,</span> Controller <span class="token punctuation">}</span> from <span class="token string">&apos;@zerothstack/core/common&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> User <span class="token punctuation">}</span> from <span class="token string">&apos;../../common/models/user.model&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> UserStore <span class="token punctuation">}</span> from <span class="token string">&apos;../../common/stores/user.store&apos;</span><span class="token punctuation">;</span>
+
+@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routeBase<span class="token punctuation">:</span> <span class="token string">&apos;users&apos;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token keyword">extends</span> <span class="token class-name">ResourceController</span><span class="token operator">&lt;</span>User<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span>logger<span class="token punctuation">:</span> Logger<span class="token punctuation">,</span> userStore<span class="token punctuation">:</span> UserStore<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>logger<span class="token punctuation">,</span> userStore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>And here is a typical <code>main.ts</code> file from the server side of a Zeroth appliation. Apart from the obviously backend 
+terminology, it should look rather familiar to an Angular 2 developer.</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span>
+    bootstrap<span class="token punctuation">,</span>
+    deferredLog<span class="token punctuation">,</span>
+    BootstrapResponse
+<span class="token punctuation">}</span> from <span class="token string">&apos;@zerothstack/core/server&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Logger<span class="token punctuation">,</span> ConsoleLogger <span class="token punctuation">}</span> from <span class="token string">&apos;@zerothstack/core/common&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> UserStore <span class="token punctuation">}</span> from <span class="token string">&apos;../common/stores/user.store&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> UserMockStore <span class="token punctuation">}</span> from <span class="token string">&apos;../common/stores/user.mock.store&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Injector <span class="token punctuation">}</span> from <span class="token string">&apos;@angular/core&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token operator">*</span> as seeders from <span class="token string">&apos;./seeders&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> as models from <span class="token string">&apos;../common/models&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> as controllers from <span class="token string">&apos;./controllers&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> as migrations from <span class="token string">&apos;./migrations&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> as services from <span class="token string">&apos;./services&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> providers <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>provide<span class="token punctuation">:</span> UserStore<span class="token punctuation">,</span> useClass<span class="token punctuation">:</span> UserMockStore<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>provide<span class="token punctuation">:</span> Logger<span class="token punctuation">,</span> useClass<span class="token punctuation">:</span> ConsoleLogger<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">bootstrap</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    models<span class="token punctuation">,</span> controllers<span class="token punctuation">,</span> seeders<span class="token punctuation">,</span> migrations<span class="token punctuation">,</span> services
+<span class="token punctuation">]</span><span class="token punctuation">,</span> providers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> BootstrapResponse <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="isomorphic-models-services-utilities"><a class="heading-anchor" href="#isomorphic-models-services-utilities"><span></span></a>Isomorphic models/services/utilities</h2>
+<p>This one of the major feature of the Zeroth framework, and while <em>isomorphic</em> is admittedly quite a buzzword these days,
+it is used to describe a clever trick that you can do with a framework that uses the same language in the fronted and backend.</p>
+<p>With the Zeroth framework, you can develop a utility that is completely platform independent, and utilize it in the 
+frontend and backend, without any modification. This is particularly useful for describing data objects like Models where
+it makes sense to have the exact same implementation both in your frontend user interface, and backend interactions with 
+the database and other services.</p>
+<p>Say you have a situation where the backend team changes a column type in the database, which means there needs
+to be a change to the backend model, which means a change to the REST API interface, which means a change to the Angular
+frontend model, and potentially some changes to the user interface. 
+That is a lot of changes, and if any of the steps is missed, you probably have a bug on your hands. </p>
+<p>With Zeroth there is one common model, and it&#x2019;s datatypes are defined in the the same class, which is used by the 
+frontend and backend services, and also informs the database schema.</p>
+<h2 id="integrated-tooling"><a class="heading-anchor" href="#integrated-tooling"><span></span></a>Integrated Tooling</h2>
+<p>In addition to the core framework Zeroth <a href="/guide/cli">provides a cli</a> which allows you to develop locally and have live reload of your
+ application as you write it. Complilation is handled with <a target="_blank" href="https://webpack.github.io/">Webpack</a> and the Zeroth cli has a custom dev server to handle
+ the live reloading. Custom functionality can be easily added to the cli if you have special compile requirements, for example
+ a custom deployment process.</p>
+<h2 id="strong-documentation"><a class="heading-anchor" href="#strong-documentation"><span></span></a>Strong documentation</h2>
+<p>Any good application needs to be well documented, for the sanity of your future self and anyone who works on your project</p>
+<h3 id="api-docs"><a class="heading-anchor" href="#api-docs"><span></span></a>API docs</h3>
+<p>Part of the build pipeline provided by the CLI includes a utility to generate API documentation directly from your typescript files.
+This works both for the frontend Angular files, and all backend and common files. You can see this in action at the <a href="/api">core
+Zeroth API documentation</a>. The documentation is generated using <a target="_blank" href="http://typedoc.io/">Typedoc</a>.</p>
+<h3 id="documentation-site"><a class="heading-anchor" href="#documentation-site"><span></span></a>Documentation site</h3>
+<p>The cli also is capable of generating a documentation site (<a target="_blank" href="http://zeroth.io">http://zeroth.io</a> is generated using the cli). 
+This allows you to create pages using just markdown syntax, with code samples to explain how something works in your app.</p>
+<h2 id="summary"><a class="heading-anchor" href="#summary"><span></span></a>Summary</h2>
+<p>If you&#x2019;ve fallen in love with the TypeScript language and are frustrated by the current offerings for TypeScript frameworks
+in the backend world, have look around the Zeroth documentation and see if it is the right fit for you.</p>
+<h3 id="get-stuck-in-"><a class="heading-anchor" href="#get-stuck-in-"><span></span></a>Get stuck in!</h3>
+<p>If you&#x2019;re keen to give Zeroth a go, head on over to the <a href="/guide/quick-start">quickstart guide</a> and jump in. </p>
+<p><em>Bear in mind that Zeroth is current in alpha (developer preview), so there will be relatively frequent changes to the 
+API as we head towards beta (Planned for late August 2016).</em></p>
+</div>
+    </div>
+</main>
+
+
+    <footer class="page-footer grey">
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by <a class="brown-text text-lighten-3" rel="author" href="http://twitter.com/zak">Zak Henry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <section class="social">
+                
+                        <div class="row">
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zeroth&repo=zerothstack&type=star&count=true&size=large&v=2"
+                                    frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        </div>
+                
+                
+                
+                
+                </section>            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+    </body>
+</html>

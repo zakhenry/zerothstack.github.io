@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Middleware</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <link rel="stylesheet" href="/assets/css/prism.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+
+    </head>
+    <body>
+
+<header>
+
+        <a href="https://github.com/zerothstack/zeroth#readme">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                 alt="Fork me on GitHub"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+    <nav class="top-nav" role="navigation">
+        <div class="container">
+            <a href="#" data-activates="nav-mobile"
+               class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <div class="nav-wrapper container">
+            <ul class="left">
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.0.0.1-0</a></li>
+            </ul>
+            <ul class="right">
+                    <li class="active"><a href="/guide">Developer Guide</a></li>
+                    <li class=""><a href="/api">API</a></li>
+                    <li class=""><a href="/articles">Articles</a></li>
+                    <li class=""><a href="/changelog">Changelog</a></li>
+                    <li class=""><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="/" class="brand-logo">
+                    <img src="/assets/image/logo.svg" alt="Logo">
+                </a>        </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="active collapsible-header waves-effect waves-grey">Developer Guide</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/guide/quick-start">
+                                                    <span>Quick Start</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/application-lifecycle">
+                                                    <span>Application Lifecycle</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/cli">
+                                                    <span>CLI</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/configuration">
+                                                    <span>Configuration</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/controllers">
+                                                    <span>Controllers</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/database">
+                                                    <span>Database</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/dependency-injection">
+                                                    <span>Dependency Injection</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/deployment">
+                                                    <span>Deployment</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/documentation">
+                                                    <span>Documentation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/email">
+                                                    <span>Email</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/exceptions">
+                                                    <span>Exceptions</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/logging">
+                                                    <span>Logging</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="/guide/middleware">
+                                                    <span>Middleware</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/migrations">
+                                                    <span>Migrations</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/model-stores">
+                                                    <span>Model Stores</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/models">
+                                                    <span>Models</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/queues">
+                                                    <span>Queues</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/routing">
+                                                    <span>Routing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/seeding">
+                                                    <span>Seeding</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/services">
+                                                    <span>Services</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/testing">
+                                                    <span>Testing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/validation">
+                                                    <span>Validation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/api" class="waves-effect waves-grey">API</a>
+                    </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class=" collapsible-header waves-effect waves-grey">Articles</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/articles/zeroth-for-the-angular-developer">
+                                                    <span>Zeroth for the Angular developer</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/articles/why-bother">
+                                                    <span>Why bother?</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/changelog" class="waves-effect waves-grey">Changelog</a>
+                    </li>
+                    <li class="bold ">
+                        <a href="/faq" class="waves-effect waves-grey">FAQ</a>
+                    </li>
+        </ul>
+    
+</header><main>
+    <div class="container">
+        <h1>Middleware</h1>
+
+        <ul class="section table-of-contents">
+                <li><a href="#usage"># Usage</a></li>
+                <li><a href="#order">&emsp;# Order</a></li>
+                <li><a href="#registration"># Registration</a></li>
+                <li><a href="#isolated-function-middleware">&emsp;# Isolated function Middleware</a></li>
+                <li><a href="#-injectable-class-middleware">&emsp;# @Injectable class Middleware</a></li>
+        </ul>
+
+        <div class="contents"><p>Middleware are blocks of code that are executed before or after the main controller method is run. They take the
+same arguments and return type as a controller route method, and are applied in order with each middleware
+passing it&#x2019;s <code>Response</code> to the next in the stack.</p>
+<p>The implementation is such that there is actually no difference between a middleware and a controller method - they all are
+items in the call stack, the only difference being that the controller method is executed in the context of the controller
+ and so has access to all services injected by that controller.</p>
+<h2 id="usage"><a class="heading-anchor" href="#usage"><span></span></a>Usage</h2>
+<p>Middleware are applied with the following method decorators </p>
+<ul>
+<li><code>@Before(...middlewareFactories)</code> - property decorator for middleware called <strong>before</strong> a controller method</li>
+<li><code>@After(...middlewareFactories)</code> - property decorator for middleware called <strong>after</strong> a controller method</li>
+<li><code>@BeforeAll(...middlewareFactories)</code> - class decorator for middleware called <strong>before all</strong> route methods in controller</li>
+<li><code>@AfterAll(...middlewareFactories)</code> - class decorator for middleware called <strong>after all</strong> route methods in controller</li>
+</ul>
+<h3 id="order"><a class="heading-anchor" href="#order"><span></span></a>Order</h3>
+<p>Middleware is applied in left to right order of the decorator params.
+For example:</p>
+<pre class="line-numbers"><code class="language-typescript">  @<span class="token function">Route</span><span class="token punctuation">(</span><span class="token string">&apos;GET&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;/example&apos;</span><span class="token punctuation">)</span>
+  @<span class="token function">Before</span><span class="token punctuation">(</span><span class="token function">debugLog</span><span class="token punctuation">(</span><span class="token string">&apos;Middleware ran 1&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">debugLog</span><span class="token punctuation">(</span><span class="token string">&apos;Middleware ran 2&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  @<span class="token function">After</span><span class="token punctuation">(</span><span class="token function">debugLog</span><span class="token punctuation">(</span><span class="token string">&apos;Middleware ran 3&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> <span class="token function">exampleMethod</span><span class="token punctuation">(</span>request<span class="token punctuation">:</span> Request<span class="token punctuation">,</span> response<span class="token punctuation">:</span> Response<span class="token punctuation">)</span><span class="token punctuation">:</span> Response <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&apos;Method ran&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token string">&apos;banana&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<p>A <code>GET</code> request for the route will result in the following log</p>
+<pre><code>[server] [17:39:33]  [Log middleware] Middleware ran 1
+[server] [17:39:33]  [Log middleware] Middleware ran 2
+[server] [17:39:33]  [controller] Method ran
+[server] [17:39:33]  [Log middleware] Middleware ran 3
+</code></pre><h2 id="registration"><a class="heading-anchor" href="#registration"><span></span></a>Registration</h2>
+<p>There are two types of middleware - isolated functions and injectable classes. Their usage is the same, but their registration differs. 
+The isolated functions are the simplest type; they just take a <code>Request</code> and <code>Response</code> object and return a <code>Response</code> or <code>Promise&lt;Response&gt;</code>.</p>
+<p>Injectable class middleware are significantly more complex, but they gain the advantage of being able to use injected dependencies
+and be substituted with other implementations with the dependency injector.</p>
+<h3 id="isolated-function-middleware"><a class="heading-anchor" href="#isolated-function-middleware"><span></span></a>Isolated function Middleware</h3>
+<p>If a middleware has simple requirements like basic request or response manipulation, a simple middlware factory is sufficient.</p>
+<p>Here is an example of a basic middleware that defines a header to copy from the request to the response:</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">function</span> <span class="token function">forwardHeader</span><span class="token punctuation">(</span>headerName<span class="token punctuation">:</span> <span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> IsolatedMiddlewareFactory <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">//use a named function here so the call stack can easily be debugged to show the called middleware</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">function</span> <span class="token function">forwardHeader</span><span class="token punctuation">(</span>request<span class="token punctuation">:</span> Request<span class="token punctuation">,</span> response<span class="token punctuation">:</span> Response<span class="token punctuation">)</span><span class="token punctuation">:</span> Response <span class="token punctuation">{</span>
+    response<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span>headerName<span class="token punctuation">,</span> request<span class="token punctuation">.</span><span class="token function">headers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>headerName<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="-injectable-class-middleware"><a class="heading-anchor" href="#-injectable-class-middleware"><span></span></a><code>@Injectable</code> class Middleware</h3>
+<p>For more advanced Middleware that need to interact with other services a more complex pattern is available to use classes
+that have injectable dependencies.</p>
+<p>Here is an example of a middleware that is defined by a class that is <code>@Injectable()</code></p>
+<pre class="line-numbers"><code class="language-typescript">
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">authorize</span><span class="token punctuation">(</span>claim<span class="token punctuation">:</span><span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> InjectableMiddlewareFactory <span class="token punctuation">{</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>injector<span class="token punctuation">:</span> ReflectiveInjector<span class="token punctuation">)</span><span class="token punctuation">:</span> Middleware <span class="token operator">=</span><span class="token operator">&gt;</span>
+    injector<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>AuthorizationMiddleware<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">middlewareFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AuthorizationMiddleware</span> <span class="token keyword">implements</span> <span class="token class-name">InjectableMiddleware</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">protected</span> auth<span class="token punctuation">:</span> Authorizor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token function">middlewareFactory</span><span class="token punctuation">(</span>claim<span class="token punctuation">:</span><span class="token keyword">string</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Middleware <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">//use a named function here so the call stack can easily be debugged to show the called middleware</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token function">authorize</span><span class="token punctuation">(</span>request<span class="token punctuation">:</span> Request<span class="token punctuation">,</span> response<span class="token punctuation">:</span> Response<span class="token punctuation">)</span><span class="token punctuation">:</span> Response <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>auth<span class="token punctuation">.</span><span class="token function">check</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> claim<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">UnauthorizedException</span><span class="token punctuation">(</span><span class="token string">&apos;Forbidden&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> response<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Note that the <code>authorize</code> function returns a closure that takes a <code>ReflectiveInjector</code> param. The injector is passed
+in when the middleware is registered from the route. This is handled within the <code>registerRoutes()</code> method of the <code>AbstractController</code>.</p>
+<p>In future there may be a cleaner way of registering functions within decorators by retrieving the <code>injector</code> outside of class instances. 
+This is a <a target="_blank" href="https://github.com/angular/angular/issues/4112">recognised issue</a> in the angular core, so once that is resolved this API may simplify.</p>
+</div>
+    </div>
+</main>
+
+
+    <footer class="page-footer grey">
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by <a class="brown-text text-lighten-3" rel="author" href="http://twitter.com/zak">Zak Henry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <section class="social">
+                
+                        <div class="row">
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zeroth&repo=zerothstack&type=star&count=true&size=large&v=2"
+                                    frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        </div>
+                
+                
+                
+                
+                </section>            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+    </body>
+</html>

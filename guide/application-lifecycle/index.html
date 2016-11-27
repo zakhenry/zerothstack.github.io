@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Application Lifecycle</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <link rel="stylesheet" href="/assets/css/prism.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+
+    </head>
+    <body>
+
+<header>
+
+        <a href="https://github.com/zerothstack/zeroth#readme">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                 alt="Fork me on GitHub"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+    <nav class="top-nav" role="navigation">
+        <div class="container">
+            <a href="#" data-activates="nav-mobile"
+               class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <div class="nav-wrapper container">
+            <ul class="left">
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.0.0.1-0</a></li>
+            </ul>
+            <ul class="right">
+                    <li class="active"><a href="/guide">Developer Guide</a></li>
+                    <li class=""><a href="/api">API</a></li>
+                    <li class=""><a href="/articles">Articles</a></li>
+                    <li class=""><a href="/changelog">Changelog</a></li>
+                    <li class=""><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="/" class="brand-logo">
+                    <img src="/assets/image/logo.svg" alt="Logo">
+                </a>        </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="active collapsible-header waves-effect waves-grey">Developer Guide</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/guide/quick-start">
+                                                    <span>Quick Start</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="/guide/application-lifecycle">
+                                                    <span>Application Lifecycle</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/cli">
+                                                    <span>CLI</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/configuration">
+                                                    <span>Configuration</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/controllers">
+                                                    <span>Controllers</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/database">
+                                                    <span>Database</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/dependency-injection">
+                                                    <span>Dependency Injection</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/deployment">
+                                                    <span>Deployment</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/documentation">
+                                                    <span>Documentation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/email">
+                                                    <span>Email</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/exceptions">
+                                                    <span>Exceptions</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/logging">
+                                                    <span>Logging</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/middleware">
+                                                    <span>Middleware</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/migrations">
+                                                    <span>Migrations</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/model-stores">
+                                                    <span>Model Stores</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/models">
+                                                    <span>Models</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/queues">
+                                                    <span>Queues</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/routing">
+                                                    <span>Routing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/seeding">
+                                                    <span>Seeding</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/services">
+                                                    <span>Services</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/testing">
+                                                    <span>Testing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/validation">
+                                                    <span>Validation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/api" class="waves-effect waves-grey">API</a>
+                    </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class=" collapsible-header waves-effect waves-grey">Articles</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/articles/zeroth-for-the-angular-developer">
+                                                    <span>Zeroth for the Angular developer</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/articles/why-bother">
+                                                    <span>Why bother?</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/changelog" class="waves-effect waves-grey">Changelog</a>
+                    </li>
+                    <li class="bold ">
+                        <a href="/faq" class="waves-effect waves-grey">FAQ</a>
+                    </li>
+        </ul>
+    
+</header><main>
+    <div class="container">
+        <h1>Application Lifecycle</h1>
+
+        <ul class="section table-of-contents">
+                <li><a href="#startup"># Startup</a></li>
+                <li><a href="#1-configuration">&emsp;# 1. Configuration</a></li>
+                <li><a href="#2-entity-registration">&emsp;# 2. Entity Registration</a></li>
+                <li><a href="#3-provider-registration">&emsp;# 3. Provider Registration</a></li>
+                <li><a href="#4-bootstrap">&emsp;# 4. Bootstrap</a></li>
+                <li><a href="#5-server-start">&emsp;# 5. Server start</a></li>
+                <li><a href="#runtime"># Runtime</a></li>
+                <li><a href="#http">&emsp;# HTTP</a></li>
+                <li><a href="#remote-sessions">&emsp;# Remote Sessions</a></li>
+                <li><a href="#queues-cron">&emsp;# Queues/Cron</a></li>
+        </ul>
+
+        <div class="contents"><p>This guide outlines the lifecycle of the backend side of a Zeroth application, as the frontend lifecycle is just standard
+Angular 2. </p>
+<h2 id="startup"><a class="heading-anchor" href="#startup"><span></span></a>Startup</h2>
+<p>Like the frontend, bootstrapping the application happens both in the <code>main.ts</code> section of the project, and in the core
+module. The core handles the loading, registration and bootstrapping of both core components and the components that 
+are defined in the application.</p>
+<p>To kick off the server, the entry javascript file will require the exported <code>bootstrap()</code> function. In production, this
+ file would be the <code>./lib/server/server/bootstrap.js</code> file. In development, this bootstrapping is handle by the cli,
+ as it extends the capabilities of the before start to allow the webpack dev sever to run and the file watchers to start
+ detecting changes.</p>
+<h3 id="1-configuration"><a class="heading-anchor" href="#1-configuration"><span></span></a>1. Configuration</h3>
+<p>When first loaded, the <code>dotenv</code> library looks for a <code>.env</code> file in the current working directory, and exports all variables
+ to <code>process.env</code>. For more info, see the <a href="/guide/configuration">Configuration Section</a> of the guide</p>
+<h3 id="2-entity-registration"><a class="heading-anchor" href="#2-entity-registration"><span></span></a>2. Entity Registration</h3>
+<p>Next, all of the entities of the application are loaded. In your <code>main.ts</code> file, this will look something like</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token operator">*</span> as models from <span class="token string">&apos;../common/models&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> as controllers from <span class="token string">&apos;./controllers&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> as migrations from <span class="token string">&apos;./migrations&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> loadClasses <span class="token operator">=</span> <span class="token punctuation">[</span>
+  models<span class="token punctuation">,</span> controllers<span class="token punctuation">,</span> seeders<span class="token punctuation">,</span> migrations
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>While this just looks like a naive retrieval of entities to load, what is actually happening is more complex as each of
+those entities have class decorators, which cause registration of the classes to the central <code>EntityRegistry</code>. In addition,
+any method or property decorators register their metadata against the static class (Remember the class has no instances
+ yet; it is simply a class definition).</p>
+<h3 id="3-provider-registration"><a class="heading-anchor" href="#3-provider-registration"><span></span></a>3. Provider Registration</h3>
+<p>Next, all providers are defined. This is akin to the provider definition in the frontend, and actually has the same interface
+ with the one exception that the providers can be promises.</p>
+<p>In the apps <code>main.ts</code>, this would appear as follows:</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">let</span> providers<span class="token punctuation">:</span> ProviderDefinition<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+  Injector<span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>provide<span class="token punctuation">:</span> UserStore<span class="token punctuation">,</span> useClass<span class="token punctuation">:</span> UserDatabaseStore<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>provide<span class="token punctuation">:</span> Logger<span class="token punctuation">,</span> useClass<span class="token punctuation">:</span> ConsoleLogger<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Sometimes it can be unclear what should be registered in the provider definitions and what should be in the <code>loadClasses</code>
+array. A general rule of thumb is that if a class uses an entity decorator like <code>@Model</code>, <code>@Controller</code> etc, then it only
+needs to be imported into the <code>loadClasses</code> array. All of the entity decorators are bootstrapped and registered with the
+injector separately, so they do not need to be in the providers array. You would only want to explicitly provide a decorated
+entity if you are substituting an implementation, or have some funky factory requirements.</p>
+<h3 id="4-bootstrap"><a class="heading-anchor" href="#4-bootstrap"><span></span></a>4. Bootstrap</h3>
+<p>The bootstrapping is in itself a multi-phase process. The core exports a <code>bootstrap</code> function, which is invoked with the
+entities and providers defined above.</p>
+<ol>
+<li>The bootstrapping is deferred until all provider promises have resolved. If <em>any</em> are rejected, bootstrapping is aborted.</li>
+<li>Specialist bootstrappers for each Entity type (models, migrations, seeders, controllers) retrieve the injectable instances 
+from the core registry and when appropriate, resolve them with the <code>ReflectiveInjector</code></li>
+<li>A new <code>injector</code> instance is created using the passed providers and newly resolved entities</li>
+<li>Any logs that have been buffered up to this point are output with the newly resolved concrete <code>Logger</code> implementation</li>
+<li>The specialist bootstrappers are invoked one-by-one to prepare or run the entities. The order is:<ol>
+<li><strong>Models</strong> - Their property definitions are registered with the ORM</li>
+<li><strong>Service</strong> - Their <code>initialize</code> methods are called and further bootstrapping is deferred until all promises resolve</li>
+<li><strong>Migrations</strong> - Migrations are run</li>
+<li><strong>Seeders</strong> - Seeders are run</li>
+<li><strong>Controllers</strong> - controller routes &amp; methods are registered with the underlying <code>Server</code> instance</li>
+</ol>
+</li>
+<li>Any passed <code>afterBootstrap</code> function is invoked.</li>
+<li>Finally, when all bootstrappers are finished, the underlying <code>Server</code>, <code>Logger</code> and <code>Injector</code> instances are returned
+to the invoking bootstrap file</li>
+</ol>
+<h3 id="5-server-start"><a class="heading-anchor" href="#5-server-start"><span></span></a>5. Server start</h3>
+<p>The final step - with the bootstrap completed and an instance of <code>Server</code> in hand, all that needs to happen is start the
+ server running. In the <code>bootstrap.ts</code> file this looks like the following:</p>
+<pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token string">&apos;reflect-metadata&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> bootstrap from <span class="token string">&apos;./main&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">bootstrap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">{</span>server<span class="token punctuation">,</span> logger<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> server<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    logger<span class="token punctuation">.</span><span class="token function">source</span><span class="token punctuation">(</span><span class="token string">&apos;server&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&apos;Server running at:&apos;</span><span class="token punctuation">,</span> server<span class="token punctuation">.</span><span class="token function">getHost</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Once that <code>start</code> promise is resolved, the server can start taking http connections.</p>
+<h2 id="runtime"><a class="heading-anchor" href="#runtime"><span></span></a>Runtime</h2>
+<h3 id="http"><a class="heading-anchor" href="#http"><span></span></a>HTTP</h3>
+<p>When there is an incoming http connection, the following process occurs:</p>
+<ol>
+<li>The <code>Server</code> instance matches the URL to get the appropriate controller method to invoke</li>
+<li>A new request and response are created</li>
+<li>The request and response are passed into the matched call stack, which includes all middleware and the actual controller method</li>
+<li>The call stack is invoked in order, with any rejected promises or thrown Errors causing the stack to abort and handling
+to defer to the error handler.</li>
+<li>On successful resolution of the call stack, the response is dispatched to the <code>Server</code> to handle sending back to the client.</li>
+</ol>
+<h3 id="remote-sessions"><a class="heading-anchor" href="#remote-sessions"><span></span></a>Remote Sessions</h3>
+<p>All Zeroth applications have remote connection capabilities provided by the <code>RemoteCli</code> service. When a connection is
+established using the <a href="/guide/cli">CLI</a>, depending on the task that is executed, define commands can interact with the
+running server.</p>
+<h3 id="queues-cron"><a class="heading-anchor" href="#queues-cron"><span></span></a>Queues/Cron</h3>
+<p>Queues and Cron have not yet been implemented.</p>
+</div>
+    </div>
+</main>
+
+
+    <footer class="page-footer grey">
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by <a class="brown-text text-lighten-3" rel="author" href="http://twitter.com/zak">Zak Henry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <section class="social">
+                
+                        <div class="row">
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zeroth&repo=zerothstack&type=star&count=true&size=large&v=2"
+                                    frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        </div>
+                
+                
+                
+                
+                </section>            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+    </body>
+</html>

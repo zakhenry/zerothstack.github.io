@@ -1,0 +1,105 @@
+{{> head }}
+{{> header }}
+<main>
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center grey-text text-lighten-2">
+                    <img src="/assets/image/logotype.svg" alt="{{title}}">
+                </h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">{{ description }}</h5>
+                </div>
+                <div class="row center">
+                    <a href="/guide/quick-start/" class="btn-large waves-effect waves-light grey lighten-1">Get Started</a>
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+        <div class="parallax"><img src="/assets/image/title-card.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center grey-text"><i class="material-icons">code</i></h2>
+                        <h5 class="center">Modern design pattern</h5>
+
+                        <p class="light">By using the <a href="https://angular.io/docs/ts/latest/guide/dependency-injection.html">Angular 2 dependency injector</a> across both frontend and backend, platform-independent dependencies can be injected by multiple platforms</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center grey-text"><i class="material-icons">widgets</i></h2>
+                        <h5 class="center">Angular Fullstack</h5>
+
+                        <p class="light">By using Angular 2 in the frontend and the Angular 2 injector in the backend, Angular developers are immediately familiar with the development environment</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center grey-text"><i class="material-icons">assignment</i></h2>
+                        <h5 class="center">Documentation Framework</h5>
+
+                        <p class="light">By leveraging <a href="http://typedoc.io">Typedoc</a> and <a href="http://metalsmith.io">Metalsmith</a>, generating documentation for consumers of your component is a breeze.</p>
+                    </div>
+                </div>
+
+              </div>
+            <div class="row">
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center grey-text"><i class="material-icons">call_to_action</i></h2>
+                        <h5 class="center">Advanced CLI</h5>
+
+                        <p class="light">An extensible commandline interface allows for custom commands to be registered for both the build toolchain and the server runtime</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center grey-text"><i class="material-icons">http</i></h2>
+                        <h5 class="center">Decoupled API</h5>
+
+                        <p class="light">While components are shared between the frontend and backend, there is no coupling. A Zeroth component or application can be a standalone REST API.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center grey-text"><i class="material-icons">directions_boat</i></h2>
+                        <h5 class="center">Deploy with Docker</h5>
+
+                        <p class="light">A Zeroth application can easily be packaged as a docker image and deployed at scale.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <div class="card grey darken-3">
+
+        <div class="card-content white-text">
+                <span class="card-title">
+                    <i class="material-icons">build</i> Zeroth is currently in <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha">alpha (developer preview) phase</a> and being actively developed.
+                </span>
+            <p>See the <a href="#roadmap">roadmap below</a> to see the planned release schedule. Keep up to date by following <a href="https://twitter.com/zeroth">@zeroth</a> on Twitter</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contents">{{{ contents }}}</div>
+    </div>
+
+</main>
+
+{{> footer }}

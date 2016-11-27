@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Documentation</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <link rel="stylesheet" href="/assets/css/prism.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/manifest.json">
+
+    </head>
+    <body>
+
+<header>
+
+        <a href="https://github.com/zerothstack/zeroth#readme">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                 alt="Fork me on GitHub"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+    <nav class="top-nav" role="navigation">
+        <div class="container">
+            <a href="#" data-activates="nav-mobile"
+               class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <div class="nav-wrapper container">
+            <ul class="left">
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.0.0.1-0</a></li>
+            </ul>
+            <ul class="right">
+                    <li class="active"><a href="/guide">Developer Guide</a></li>
+                    <li class=""><a href="/api">API</a></li>
+                    <li class=""><a href="/articles">Articles</a></li>
+                    <li class=""><a href="/changelog">Changelog</a></li>
+                    <li class=""><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li class="logo">
+                <a id="logo-container" href="/" class="brand-logo">
+                    <img src="/assets/image/logo.svg" alt="Logo">
+                </a>        </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="active collapsible-header waves-effect waves-grey">Developer Guide</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/guide/quick-start">
+                                                    <span>Quick Start</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/application-lifecycle">
+                                                    <span>Application Lifecycle</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/cli">
+                                                    <span>CLI</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/configuration">
+                                                    <span>Configuration</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/controllers">
+                                                    <span>Controllers</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/database">
+                                                    <span>Database</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/dependency-injection">
+                                                    <span>Dependency Injection</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/deployment">
+                                                    <span>Deployment</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="/guide/documentation">
+                                                    <span>Documentation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/email">
+                                                    <span>Email</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/exceptions">
+                                                    <span>Exceptions</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/logging">
+                                                    <span>Logging</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/middleware">
+                                                    <span>Middleware</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/migrations">
+                                                    <span>Migrations</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/model-stores">
+                                                    <span>Model Stores</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/models">
+                                                    <span>Models</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="pending ">
+                                                <a href="/guide/queues">
+                                                    <span>Queues</span>
+                                                    <i class="right material-icons">schedule</i> 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/routing">
+                                                    <span>Routing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/seeding">
+                                                    <span>Seeding</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/services">
+                                                    <span>Services</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/testing">
+                                                    <span>Testing</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/guide/validation">
+                                                    <span>Validation</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/api" class="waves-effect waves-grey">API</a>
+                    </li>
+    
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class=" collapsible-header waves-effect waves-grey">Articles</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                            <li class="">
+                                                <a href="/articles/zeroth-for-the-angular-developer">
+                                                    <span>Zeroth for the Angular developer</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/articles/why-bother">
+                                                    <span>Why bother?</span>
+                                                    
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bold ">
+                        <a href="/changelog" class="waves-effect waves-grey">Changelog</a>
+                    </li>
+                    <li class="bold ">
+                        <a href="/faq" class="waves-effect waves-grey">FAQ</a>
+                    </li>
+        </ul>
+    
+</header><main>
+    <div class="container">
+        <h1>Documentation</h1>
+
+        <ul class="section table-of-contents">
+                <li><a href="#getting-started"># Getting started</a></li>
+                <li><a href="#adding-pages"># Adding pages</a></li>
+                <li><a href="#collections">&emsp;# Collections</a></li>
+                <li><a href="#templates-partials">&emsp;# Templates &amp; Partials</a></li>
+                <li><a href="#styles-assets">&emsp;# Styles &amp; Assets</a></li>
+                <li><a href="#variables">&emsp;# Variables</a></li>
+                <li><a href="#typedoc"># TypeDoc</a></li>
+                <li><a href="#deployment"># Deployment</a></li>
+                <li><a href="#config">&emsp;# Config</a></li>
+                <li><a href="#google-analytics">&emsp;# Google Analytics</a></li>
+                <li><a href="#travis-ci">&emsp;# Travis CI</a></li>
+                <li><a href="#plugins"># Plugins</a></li>
+        </ul>
+
+        <div class="contents"><p>Zeroth comes with documentation generation tools out of the box, so all you need to do is start writing.</p>
+<p>Under the hood of <code>@zerothstack/toolchain</code> is the awesome tool  <a target="_blank" href="http://metalsmith.io">Metalsmith</a> which allows for the 
+ automatic generation of static sites using simple markdown source files and handlebars templates.</p>
+<p>Zeroth <a target="_blank" href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food">&#x201C;eats it&#x2019;s own dogfood&#x201D;</a> as such so this documentation
+ is generated using the same tooling. </p>
+<h2 id="getting-started"><a class="heading-anchor" href="#getting-started"><span></span></a>Getting started</h2>
+<p>To start writing documentation, first start up the documentation watcher:</p>
+<p>Example:</p>
+<pre><code>$ u
+[zeroth] Loaded 12 commands. Type &apos;help&apos; to see available commands
+zeroth~$ doc watch
+[doc] Removing directory ./dist-docs
+[doc] Done.
+[metalsmith-watch] &#x2713; Live reload server started on port: 35729
+[metalsmith-serve] serving /Users/zak/zeroth/zeroth/dist-docs at http://localhost:8080
+[doc] Copying doc assets from toolchain
+[metalsmith-watch] &#x2714;&#xFE0E; Watching **/*
+[doc] [zeroth] Doc watcher started at https://localhost:8080
+Run &apos;doc stop&apos; to stop the watch server
+</code></pre><p>Now all you need to do is open your browser to <a target="_blank" href="http://localhost:8080">http://localhost:8080</a></p>
+<p>Note that you can still run other commands within the zeroth console. To stop the watch server, just run <code>doc stop</code>
+ or <code>CTRL+C</code> (twice) to close the entire console.</p>
+<h2 id="adding-pages"><a class="heading-anchor" href="#adding-pages"><span></span></a>Adding pages</h2>
+<p>Pages can be easily added by just creating a new markdown document anywhere under the <code>./docs</code> directory and putting some
+yaml <a target="_blank" href="https://jekyllrb.com/docs/frontmatter/">frontmatter</a> meta information.</p>
+<p>For example the frontmatter for this page is:</p>
+<pre class="line-numbers"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Documentation
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2016-06-09</span>
+<span class="token key atrule">collection</span><span class="token punctuation">:</span> guide
+<span class="token key atrule">collectionSort</span><span class="token punctuation">:</span> <span class="token number">1</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> guide.hbs
+<span class="token punctuation">---</span>
+</code></pre>
+<h3 id="collections"><a class="heading-anchor" href="#collections"><span></span></a>Collections</h3>
+<p>Collections are groups of pages, and can be used to generate listings or navigation automatically.
+By default, the zeroth toolchain processes three collections:</p>
+<ul>
+<li><code>main</code> - the top-level items that should appear in the navigation</li>
+<li><code>guide</code> - pages to go under the guide page</li>
+<li><code>articles</code> - all pages for the articles section</li>
+</ul>
+<p>If you set the <code>collection: &lt;type&gt;</code> attribute in the frontmatter of your page, it will be automatically added to their
+ respective listings or navigation sections</p>
+<p><em>Note: you may need to restart the doc watcher when adding new files as it only does a rebuild of changed files, 
+and listings sections or navigation items may depend on other items</em></p>
+<h3 id="templates-partials"><a class="heading-anchor" href="#templates-partials"><span></span></a>Templates &amp; Partials</h3>
+<p>The template defines which handlebars template is used to render the page. The toolchain provides a few defaults:</p>
+<table>
+<thead>
+<tr>
+<th>Template</th>
+<th>For</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basic.hbs</td>
+<td>Anything simple</td>
+<td>None</td>
+</tr>
+<tr>
+<td>guide.hbs</td>
+<td>Creating guide pages</td>
+<td>Contents section, pending display</td>
+</tr>
+<tr>
+<td>post.hbs</td>
+<td>News articles</td>
+<td>Date information</td>
+</tr>
+</tbody>
+</table>
+<p>All templates can be overidden by just placing your template in the same location as the toolchain.
+See <a target="_blank" href="https://github.com/zerothstack/toolchain/tree/master/docs/templates">the template directory in the toolchain</a> 
+for the locations of the layouts/partials</p>
+<h3 id="styles-assets"><a class="heading-anchor" href="#styles-assets"><span></span></a>Styles &amp; Assets</h3>
+<p>Like templates &amp; partials, you can add your own assets into the <code>./docs/assets</code> folder. 
+Any file that matches the same name as the toolchain will override the default.</p>
+<h3 id="variables"><a class="heading-anchor" href="#variables"><span></span></a>Variables</h3>
+<p>The <code>./package.json</code> file content is available globally to handlebars templates at <code>{{pkg}}</code></p>
+<p>Any additional variables that you would like to add can be defined by <a href="/guide/cli/#-configuredocs-config-">configuring the <code>meta</code> object of <code>configureDocs()</code> in the <code>zeroth.js</code> file</a></p>
+<h2 id="typedoc"><a class="heading-anchor" href="#typedoc"><span></span></a>TypeDoc</h2>
+<p>To document your API in it&#x2019;s full detail, <a target="_blank" href="http://typedoc.io">TypeDoc</a> is used to automatically generate documentation.
+You can see an example of this documentation at <a href="/api">/api</a></p>
+<p>To run the generator, execute <code>typedoc</code> in the cli. This takes a while so we don&#x2019;t run it on every watch. This is
+ automatically run on deployment of the documentation, so you usually don&#x2019;t need to worry about it when writing docs.</p>
+<h2 id="deployment"><a class="heading-anchor" href="#deployment"><span></span></a>Deployment</h2>
+<p>The toolchain is configured to be able to automatically deploy to github pages on the gh-pages branch.
+If you want to deploy to a different destination see the configuration options below:</p>
+<h3 id="config"><a class="heading-anchor" href="#config"><span></span></a>Config</h3>
+<p>Configuration of the deployment is handled in the <code>zeroth.js</code> file. 
+By default, the documentation will deploy to the <code>gh-pages</code> branch at your repositories <code>origin</code>.</p>
+<p>If you have different requirements, see the <a href="/guide/cli/#-configuredeployment-config-"><code>ZerothProject.configureDeployment()</code></a> section for configuration options.</p>
+<h3 id="google-analytics"><a class="heading-anchor" href="#google-analytics"><span></span></a>Google Analytics</h3>
+<p>You can add tracking with <a target="_blank" href="https://analytics.google.com">Google Analytics</a> to your documentation by <a href="/guide/cli/#-configuredocs-config-">configuring the <code>meta.gaCode</code> property of <code>configureDocs()</code> in the <code>zeroth.js</code> file</a> </p>
+<h3 id="travis-ci"><a class="heading-anchor" href="#travis-ci"><span></span></a>Travis CI</h3>
+<p>To automate deployment fully, you can use TravisCI to run the deployment process, however you will need to configure
+ keys so that Travis can push the documentation into the target branch.</p>
+<ul>
+<li>Add the following to your <code>.travis.yml</code> file:</li>
+</ul>
+<pre><code> after_success:
+ - npm run coveralls
+ - eval &quot;$(ssh-agent -s)&quot; #start the ssh agent
+ - chmod 600 .travis/deployment_key.pem
+ - ssh-add .travis/deployment_key.pem
+</code></pre><ul>
+<li>Add your <em>encrypted</em> private key to .travis/deployment_key.pem.enc </li>
+<li>see <a target="_blank" href="https://docs.travis-ci.com/user/encrypting-files/#Automated-Encryption">https://docs.travis-ci.com/user/encrypting-files/#Automated-Encryption</a> for more encryption instructions</li>
+</ul>
+<p>Note that you <strong>MUST NOT</strong> commit your unencrypted private key directly into <code>.travis/deployment_key.pem.</code></p>
+<h2 id="plugins"><a class="heading-anchor" href="#plugins"><span></span></a>Plugins</h2>
+<p>The toolchain currently uses the following <a target="_blank" href="http://metalsmith.io">metalsmith</a> plugins:</p>
+<ul>
+<li><a target="_blank" href="https://github.com/segmentio/metalsmith-markdown">metalsmith-markdown</a></li>
+<li><a target="_blank" href="https://github.com/zakhenry/metalsmith-layouts">metalsmith-layouts</a></li>
+<li><a target="_blank" href="https://github.com/segmentio/metalsmith-permalinks">metalsmith-permalinks</a> </li>
+<li><a target="_blank" href="https://github.com/zakhenry/metalsmith-serve">metalsmith-serve</a></li>
+<li><a target="_blank" href="https://github.com/zakhenry/metalsmith-watch">metalsmith-watch</a></li>
+<li><a target="_blank" href="https://github.com/Availity/metalsmith-prism">metalsmith-prism</a></li>
+<li><a target="_blank" href="https://github.com/segmentio/metalsmith-collections">metalsmith-collections</a></li>
+<li><a target="_blank" href="https://github.com/aymericbeaumet/metalsmith-define">metalsmith-define</a></li>
+<li><a target="_blank" href="https://github.com/hellatan/metalsmith-date-formatter">metalsmith-date-formatter</a></li>
+<li><a target="_blank" href="https://github.com/majodev/metalsmith-headings-identifier">metalsmith-headings-identifier</a></li>
+<li><a target="_blank" href="https://github.com/zakhenry/metalsmith-headings">metalsmith-headings</a></li>
+<li><a target="_blank" href="https://github.com/segmentio/metalsmith-drafts">metalsmith-drafts</a></li>
+</ul>
+<p>At this time adding new plugins is not configurable. If you&#x2019;d like this capability, <a target="_blank" href="https://github.com/zerothstack/toolchain/issues">get in touch</a>.</p>
+</div>
+    </div>
+</main>
+
+
+    <footer class="page-footer grey">
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by <a class="brown-text text-lighten-3" rel="author" href="http://twitter.com/zak">Zak Henry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <section class="social">
+                
+                        <div class="row">
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zeroth&repo=zerothstack&type=star&count=true&size=large&v=2"
+                                    frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        </div>
+                
+                
+                
+                
+                </section>            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+    </body>
+</html>
