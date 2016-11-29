@@ -76,7 +76,7 @@
 					<p>Any of the types (classes, functions etc) defined under this module can be imported from
 					<code>@zerothstack/core/server</code></p>
 					<p>Example:</p>
-					<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { AbstractController } from <span class="hljs-string">'zeroth/core/server'</span>;
+					<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { AbstractController } from <span class="hljs-string">'@zerothstack/core/server'</span>;
 </code></pre>
 				</div>
 			</section>
@@ -109,6 +109,7 @@
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_server_.response.html" class="tsd-kind-icon">Response</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_server_.seederbootstrapper.html" class="tsd-kind-icon">Seeder<wbr>Bootstrapper</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_server_.server.html" class="tsd-kind-icon">Server</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_server_.servermock.html" class="tsd-kind-icon">Server<wbr>Mock</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_server_.servicebootstrapper.html" class="tsd-kind-icon">Service<wbr>Bootstrapper</a></li>
 							</ul>
 						</section>
@@ -123,6 +124,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_server_.classdictionary.html" class="tsd-kind-icon">Class<wbr>Dictionary</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.connectedsocketcallback.html" class="tsd-kind-icon">Connected<wbr>Socket<wbr>Callback</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_server_.controllerconstructor.html" class="tsd-kind-icon">Controller<wbr>Constructor</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.controllermetadata.html" class="tsd-kind-icon">Controller<wbr>Metadata</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_server_.controllerstatic.html" class="tsd-kind-icon">Controller<wbr>Static</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.databaselogfunction.html" class="tsd-kind-icon">Database<wbr>Log<wbr>Function</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.deferredlog.html" class="tsd-kind-icon">Deferred<wbr>Log</a></li>
@@ -132,6 +134,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.methoddefinition.html" class="tsd-kind-icon">Method<wbr>Definition</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.methoddictionary.html" class="tsd-kind-icon">Method<wbr>Dictionary</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.middleware.html" class="tsd-kind-icon">Middleware</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.middlewareregistry.html" class="tsd-kind-icon">Middleware<wbr>Registry</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.remoteclicontext.html" class="tsd-kind-icon">Remote<wbr>Cli<wbr>Context</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.routeconfig.html" class="tsd-kind-icon">Route<wbr>Config</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_server_.table.html" class="tsd-kind-icon">Table</a></li>
@@ -166,7 +169,10 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_server_.html#afterall" class="tsd-kind-icon">After<wbr>All</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_server_.html#before" class="tsd-kind-icon">Before</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_server_.html#beforeall" class="tsd-kind-icon">Before<wbr>All</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_server_.html#controller" class="tsd-kind-icon">Controller</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_server_.html#migration" class="tsd-kind-icon">Migration</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_server_.html#route" class="tsd-kind-icon">Route</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_server_.html#seeder" class="tsd-kind-icon">Seeder</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_server_.html#bootstrap" class="tsd-kind-icon">bootstrap</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_server_.html#debuglog" class="tsd-kind-icon">debug<wbr>Log</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_server_.html#deferredlog-1" class="tsd-kind-icon">deferred<wbr>Log</a></li>
@@ -186,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">Http<wbr>Method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/servers/abstract.server.ts#L15">server/servers/abstract.server.ts:15</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/servers/abstract.server.ts#L15">server/servers/abstract.server.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +202,7 @@
 					<div class="tsd-signature tsd-kind-icon">Middleware<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_server_.injectablemiddlewarefactory.html" class="tsd-signature-type">InjectableMiddlewareFactory</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_server_.isolatedmiddlewarefactory.html" class="tsd-signature-type">IsolatedMiddlewareFactory</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/middleware/index.ts#L27">server/middleware/index.ts:27</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/middleware/index.ts#L27">server/middleware/index.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +212,7 @@
 					<div class="tsd-signature tsd-kind-icon">Middleware<wbr>Location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/controllers/abstract.controller.ts#L27">server/controllers/abstract.controller.ts:27</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/controllers/abstract.controller.ts#L27">server/controllers/abstract.controller.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +222,7 @@
 					<div class="tsd-signature tsd-kind-icon">Provider<wbr>Definition<span class="tsd-signature-symbol">:</span> <a href="_server_.html#providertype" class="tsd-signature-type">ProviderType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise&lt;any[] | Type&lt;any&gt; | { [k: string]: any; }&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise&lt;(any[] | Type&lt;any&gt; | { [k: string]: any; })[]&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/bootstrap/bootstrap.ts#L23">server/bootstrap/bootstrap.ts:23</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/bootstrap/bootstrap.ts#L23">server/bootstrap/bootstrap.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -226,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">Provider<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Type&lt;any&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">{ [k: string]: any; }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/bootstrap/bootstrap.ts#L19">server/bootstrap/bootstrap.ts:19</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/bootstrap/bootstrap.ts#L19">server/bootstrap/bootstrap.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -236,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">Typeorm<wbr>Log<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/services/database.service.ts#L14">server/services/database.service.ts:14</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/services/database.service.ts#L14">server/services/database.service.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">CORE_<wbr>PROVIDERS<span class="tsd-signature-symbol">:</span> <a href="_server_.html#providerdefinition" class="tsd-signature-type">ProviderDefinition</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/main.ts#L32">server/main.ts:32</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/main.ts#L32">server/main.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -269,7 +275,7 @@
 					<div class="tsd-signature tsd-kind-icon">deferred<wbr>Logs<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_server_.deferredlog.html" class="tsd-signature-type">DeferredLog</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/bootstrap/bootstrap.ts#L40">server/bootstrap/bootstrap.ts:40</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/bootstrap/bootstrap.ts#L40">server/bootstrap/bootstrap.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,7 +285,7 @@
 					<div class="tsd-signature tsd-kind-icon">table<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_server_.table.html" class="tsd-signature-type">Table</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/services/remoteCli.service.ts#L17">server/services/remoteCli.service.ts:17</a></li>
+							<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/services/remoteCli.service.ts#L17">server/services/remoteCli.service.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -296,7 +302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/middleware/middleware.decorator.ts#L35">server/middleware/middleware.decorator.ts:35</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/middleware/middleware.decorator.ts#L35">server/middleware/middleware.decorator.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -336,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/middleware/middleware.decorator.ts#L78">server/middleware/middleware.decorator.ts:78</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/middleware/middleware.decorator.ts#L78">server/middleware/middleware.decorator.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -368,7 +374,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/middleware/middleware.decorator.ts#L21">server/middleware/middleware.decorator.ts:21</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/middleware/middleware.decorator.ts#L21">server/middleware/middleware.decorator.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +414,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/middleware/middleware.decorator.ts#L66">server/middleware/middleware.decorator.ts:66</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/middleware/middleware.decorator.ts#L66">server/middleware/middleware.decorator.ts:66</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -430,6 +436,78 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="controller" class="tsd-anchor"></a>
+					<h3>Controller</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">Controller<span class="tsd-signature-symbol">(</span>metadata<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_server_.controllermetadata.html" class="tsd-signature-type">ControllerMetadata</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClassDecorator</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/registry/decorators.ts#L36">server/registry/decorators.ts:36</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> @Controller class decorator for registering class with the <a href="../classes/_common_.entityregistry.html">EntityRegistry</a></p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="lang-typescript"> <span class="hljs-keyword">import</span> { Controller } from <span class="hljs-string">'@zerothstack/core/common'</span>;
+ <span class="hljs-keyword">import</span> { AbstractController } from <span class="hljs-string">'@zerothstack/core/server'</span>;
+
+ @Controller()
+ <span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> ExampleController extends AbstractController {}
+</code></pre>
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> metadata: <a href="../interfaces/_server_.controllermetadata.html" class="tsd-signature-type">ControllerMetadata</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ClassDecorator</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="migration" class="tsd-anchor"></a>
+					<h3>Migration</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">Migration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClassDecorator</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/registry/decorators.ts#L75">server/registry/decorators.ts:75</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> @Migration class decorator for registering class with the <a href="../classes/_common_.entityregistry.html">EntityRegistry</a></p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="lang-typescript"> <span class="hljs-keyword">import</span> { Migration } from <span class="hljs-string">'@zerothstack/core/common'</span>;
+ <span class="hljs-keyword">import</span> { AbstractMigration } from <span class="hljs-string">'@zerothstack/core/server'</span>;
+
+ @Migration()
+ <span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> ExampleMigration extends AbstractMigration {}
+</code></pre>
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ClassDecorator</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="route" class="tsd-anchor"></a>
 					<h3>Route</h3>
@@ -440,7 +518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/controllers/route.decorator.ts#L13">server/controllers/route.decorator.ts:13</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/controllers/route.decorator.ts#L13">server/controllers/route.decorator.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,6 +550,39 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="seeder" class="tsd-anchor"></a>
+					<h3>Seeder</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">Seeder<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ClassDecorator</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/registry/decorators.ts#L57">server/registry/decorators.ts:57</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> @Seeder class decorator for registering class with the <a href="../classes/_common_.entityregistry.html">EntityRegistry</a></p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="lang-typescript"> <span class="hljs-keyword">import</span> { Seeder } from <span class="hljs-string">'@zerothstack/core/common'</span>;
+ <span class="hljs-keyword">import</span> { AbstractSeeder } from <span class="hljs-string">'@zerothstack/core/server'</span>;
+
+ @Seeder()
+ <span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> ExampleSeeder extends AbstractSeeder {}
+</code></pre>
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ClassDecorator</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="bootstrap" class="tsd-anchor"></a>
 					<h3>bootstrap</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -481,7 +592,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/bootstrap/bootstrap.ts#L92">server/bootstrap/bootstrap.ts:92</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/bootstrap/bootstrap.ts#L92">server/bootstrap/bootstrap.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -523,7 +634,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/middleware/debugLog.middleware.ts#L64">server/middleware/debugLog.middleware.ts:64</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/middleware/debugLog.middleware.ts#L64">server/middleware/debugLog.middleware.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -570,7 +681,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/bootstrap/bootstrap.ts#L41">server/bootstrap/bootstrap.ts:41</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/bootstrap/bootstrap.ts#L41">server/bootstrap/bootstrap.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -596,7 +707,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/bootstrap/bootstrap.ts#L54">server/bootstrap/bootstrap.ts:54</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/bootstrap/bootstrap.ts#L54">server/bootstrap/bootstrap.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -632,7 +743,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/middleware/middleware.decorator.ts#L47">server/middleware/middleware.decorator.ts:47</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/middleware/middleware.decorator.ts#L47">server/middleware/middleware.decorator.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -662,7 +773,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/0fed1cf/src/server/services/jwtAuthStrategy.ts#L15">server/services/jwtAuthStrategy.ts:15</a></li>
+									<li>Defined in <a target="_blank" href="https://github.com/zerothstack/zeroth/blob/087a674/src/server/services/jwtAuthStrategy.ts#L15">server/services/jwtAuthStrategy.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -691,12 +802,6 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_server_.html">"server"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_server_registry_decorators_.html">"server/registry/decorators"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_server_servers_abstract_server_mock_.html">"server/servers/abstract.server.mock"</a>
 					</li>
 				</ul>
 			</nav>
@@ -769,6 +874,9 @@
 						<a href="../classes/_server_.server.html" class="tsd-kind-icon">Server</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_server_.servermock.html" class="tsd-kind-icon">Server<wbr>Mock</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_server_.servicebootstrapper.html" class="tsd-kind-icon">Service<wbr>Bootstrapper</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -794,6 +902,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../interfaces/_server_.controllerconstructor.html" class="tsd-kind-icon">Controller<wbr>Constructor</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_server_.controllermetadata.html" class="tsd-kind-icon">Controller<wbr>Metadata</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../interfaces/_server_.controllerstatic.html" class="tsd-kind-icon">Controller<wbr>Static</a>
@@ -821,6 +932,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_server_.middleware.html" class="tsd-kind-icon">Middleware</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_server_.middlewareregistry.html" class="tsd-kind-icon">Middleware<wbr>Registry</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_server_.remoteclicontext.html" class="tsd-kind-icon">Remote<wbr>Cli<wbr>Context</a>
@@ -879,8 +993,17 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_server_.html#beforeall" class="tsd-kind-icon">Before<wbr>All</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_server_.html#controller" class="tsd-kind-icon">Controller</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_server_.html#migration" class="tsd-kind-icon">Migration</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_server_.html#route" class="tsd-kind-icon">Route</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_server_.html#seeder" class="tsd-kind-icon">Seeder</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_server_.html#bootstrap" class="tsd-kind-icon">bootstrap</a>
