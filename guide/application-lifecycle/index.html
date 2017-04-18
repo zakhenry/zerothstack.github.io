@@ -44,7 +44,7 @@
 
         <div class="nav-wrapper container">
             <ul class="left">
-                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.1.0.7</a></li>
+                <li><a class="waves-effect waves-light btn btn-flat white" style="text-transform: none;" target="_blank" href="https://github.com/zerothstack/zeroth#readme">@zerothstack/core v.1.0.8</a></li>
             </ul>
             <ul class="right">
                     <li class="active"><a href="/guide">Developer Guide</a></li>
@@ -257,10 +257,10 @@
         </ul>
 
         <div class="contents"><p>This guide outlines the lifecycle of the backend side of a Zeroth application, as the frontend lifecycle is just standard
-Angular 2. </p>
+Angular 2.</p>
 <h2 id="startup"><a class="heading-anchor" href="#startup"><span></span></a>Startup</h2>
 <p>Like the frontend, bootstrapping the application happens both in the <code>main.ts</code> section of the project, and in the core
-module. The core handles the loading, registration and bootstrapping of both core components and the components that 
+module. The core handles the loading, registration and bootstrapping of both core components and the components that
 are defined in the application.</p>
 <p>To kick off the server, the entry javascript file will require the exported <code>bootstrap()</code> function. In production, this
  file would be the <code>./lib/server/server/bootstrap.js</code> file. In development, this bootstrapping is handle by the cli,
@@ -273,6 +273,7 @@ are defined in the application.</p>
 <p>Next, all of the entities of the application are loaded. In your <code>main.ts</code> file, this will look something like</p>
 <pre class="line-numbers"><code class="language-typescript"><span class="token keyword">import</span> <span class="token operator">*</span> as models from <span class="token string">&apos;../common/models&apos;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token operator">*</span> as controllers from <span class="token string">&apos;./controllers&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> as seeders from <span class="token string">&apos;./seeders&apos;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token operator">*</span> as migrations from <span class="token string">&apos;./migrations&apos;</span><span class="token punctuation">;</span>
 
 <span class="token keyword">let</span> loadClasses <span class="token operator">=</span> <span class="token punctuation">[</span>
@@ -303,7 +304,7 @@ entity if you are substituting an implementation, or have some funky factory req
 entities and providers defined above.</p>
 <ol>
 <li>The bootstrapping is deferred until all provider promises have resolved. If <em>any</em> are rejected, bootstrapping is aborted.</li>
-<li>Specialist bootstrappers for each Entity type (models, migrations, seeders, controllers) retrieve the injectable instances 
+<li>Specialist bootstrappers for each Entity type (models, migrations, seeders, controllers) retrieve the injectable instances
 from the core registry and when appropriate, resolve them with the <code>ReflectiveInjector</code></li>
 <li>A new <code>injector</code> instance is created using the passed providers and newly resolved entities</li>
 <li>Any logs that have been buffered up to this point are output with the newly resolved concrete <code>Logger</code> implementation</li>
